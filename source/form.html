@@ -91,19 +91,19 @@
             <legend class="grade__title">Ваше общее впечатление:</legend>
             <ul class="grade__list">
               <li class="grade__item">
-                <label class="grade__control">
+                <label class="choice">
                   <input class="visually-hidden grade__input" type="radio" name="grade" value="positive" checked>
                   <span class="grade__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="grade__item">
-                <label class="grade__control">
+                <label class="choice">
                   <input class="visually-hidden grade__input" type="radio" name="grade" value="negative">
                   <span class="grade__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="grade__item">
-                <label class="grade__control">
+                <label class="choice">
                   <input class="visually-hidden grade__input" type="radio" name="grade" value="difficult">
                   <span class="grade__label">Затрудняюсь ответить</span>
                 </label>
@@ -119,19 +119,19 @@
             <legend class="visit__title">Посещенные достопримечательности:</legend>
             <ul class="visit__list">
               <li class="visit__item">
-                <label class="visit__control">
+                <label class="choice choice--checkbox">
                   <input class="visually-hidden visit__input" type="checkbox" name="visit" value="Мост Дьявола" checked>
                   <span class="visit__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="visit__item">
-                <label class="visit__control">
+                <label class="choice choice--checkbox">
                   <input class="visually-hidden visit__input" type="checkbox" name="visit" value="Слайд-парк" checked>
                   <span class="visit__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="visit__item">
-                <label class="visit__control">
+                <label class="choice choice--checkbox">
                   <input class="visually-hidden visit__input" type="checkbox" name="visit" value="Гора-Колокол" checked>
                   <span class="visit__label">Гора-Колокол</span>
                 </label>
@@ -146,10 +146,14 @@
           </fieldset>
         </form>
       </section>
-      <section class="review">
-        <h2 class="review__title">Опишите свои эмоции:</h2>
-        <textarea class="review__fill">Опишите подробно все свои восторги</textarea>
-        <a class="button review__button" href="#">Отправить отзыв</a>
+      <section class="comment">
+        <h2 class="comment__title">Опишите свои эмоции:</h2>
+        <form class="comment__text" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="text-field text-field--textarea">
+            <textarea class="text-field__input" rows="10" cols="160" name="text">Опишите подробно все свои восторги</textarea>
+          </label>
+          <a class="button comment__button" href="#">Отправить отзыв</a>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
