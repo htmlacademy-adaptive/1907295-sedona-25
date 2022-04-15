@@ -41,119 +41,130 @@
       </section>
       <section class="promo-text">
         <h2 class="promo-text__slogan">Оставьте свой отзыв</h2>
-        <p class="promo-text__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+        <p class="promo-text__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
-      <section class="registration">
-        <div class="registration__requisites">
-          <h2 class="visually-hidden">Регистрация</h2>
-          <p class="registration__title">Представьтесь:</p>
-          <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="registration__name">
-              <label class="registration__label" for="registration__name">Имя*:</label>
-              <input type="text" id="registration__name" name="registration__name" placeholder="Пётр">
-            </p>
-          </form>
-          <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="registration__surname">
-              <label class="registration__label" for="registration__surname">Фамилия*:</label>
-              <input type="text" id="registration__surname" name="registration__surname" placeholder="Пустота">
-            </p>
-          </form>
-          <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="registration__patronymic">
-              <label class="registration__label" for="registration__patronymic">Отчество:</label>
-              <input type="text" id="registration__patronymic" name="registration__patronymic" placeholder="Викторович">
-            </p>
-          </form>
-        </div>
-        <div class="registration__contacts">
-          <h2 class="visually-hidden">Регистрация.</h2>
-          <p class="registration__title">Контактная информация:</p>
-          <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="registration__phone">
-              <label class="registration__label" for="registration__phone">Контактный телефон*:</label>
-              <input type="text" id="registration__phone" name="registration__phone" placeholder="Введите телефон">
-            </p>
-            <a class="visually-hidden button registration__button registration__button--phone" href="#">Телефон</a>
-          </form>
-          <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="registration__email">
-              <label class="registration__label" for="registration__email">Электронная почта*:</label>
-              <input type="text" id="registration__email" name="registration__email" placeholder="Введите e-mail">
-            </p>
-            <a class="visually-hidden button registration__button registration__button--email" href="#">Электронная почта</a>
-          </form>
-        </div>
-      </section>
-      <section class="grade">
-        <h2 class="visually-hidden">Оценка</h2>
-        <form class="grade__filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="grade__group">
-            <legend class="grade__title">Ваше общее впечатление:</legend>
-            <ul class="grade__list">
-              <li class="grade__item">
-                <label class="choice">
-                  <input class="visually-hidden grade__input" type="radio" name="grade" value="positive" checked>
-                  <span class="grade__label">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="grade__item">
-                <label class="choice">
-                  <input class="visually-hidden grade__input" type="radio" name="grade" value="negative">
-                  <span class="grade__label">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="grade__item">
-                <label class="choice">
-                  <input class="visually-hidden grade__input" type="radio" name="grade" value="difficult">
-                  <span class="grade__label">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </section>
-      <section class="visit">
-        <h2 class="visually-hidden">Места пребывания</h2>
-        <form class="visit__filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="visit__group">
-            <legend class="visit__title">Посещенные достопримечательности:</legend>
-            <ul class="visit__list">
-              <li class="visit__item">
-                <label class="choice choice--checkbox">
-                  <input class="visually-hidden visit__input" type="checkbox" name="visit" value="Мост Дьявола" checked>
-                  <span class="visit__label">Мост Дьявола</span>
-                </label>
-              </li>
-              <li class="visit__item">
-                <label class="choice choice--checkbox">
-                  <input class="visually-hidden visit__input" type="checkbox" name="visit" value="Слайд-парк" checked>
-                  <span class="visit__label">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="visit__item">
-                <label class="choice choice--checkbox">
-                  <input class="visually-hidden visit__input" type="checkbox" name="visit" value="Гора-Колокол" checked>
-                  <span class="visit__label">Гора-Колокол</span>
-                </label>
-              </li>
-              <li class="visit__item">
-                <label class="visit__control">
-                  <input class="visually-hidden visit__input" type="checkbox" name="visit" value="Красные скалы">
-                  <span class="visit__label">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </section>
-      <section class="comment">
-        <h2 class="comment__title">Опишите свои эмоции:</h2>
-        <form class="comment__text" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="text-field text-field--textarea">
-            <textarea class="text-field__input" rows="10" cols="160" name="text">Опишите подробно все свои восторги</textarea>
-          </label>
-          <a class="button comment__button" href="#">Отправить отзыв</a>
+      <section class="review">
+        <h2 class="visually-hidden">Отзыв.</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="personal">
+            <div class="nickname">
+              <fieldset class="nickname__group">
+                <legend class="nickname__title">Представьтесь:</legend>
+                <ul class="nickname__list">
+                  <li class="nickname__item">
+                    <label class="text-field">
+                      <span class="text-field__label">Имя*:</span>
+                      <br>
+                      <input class="text-field__input" type="text" name="nickname" placeholder="Пётр" required>
+                    </label>
+                  </li>
+                  <li class="nickname__item">
+                    <label class="text-field">
+                      <span class="text-field__label">Фамилия*:</span>
+                      <br>
+                      <input class="text-field__input" type="text" name="nickname" placeholder="Пустота" required>
+                    </label>
+                  </li>
+                  <li class="nickname__item">
+                    <label class="text-field">
+                      <span class="text-field__label">Отчество:</span>
+                      <br>
+                      <input class="text-field__input" type="text" name="nickname" placeholder="Викторович">
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="contact">
+              <fieldset class="contact__group">
+                <legend class="contact__title">Контактная информация:</legend>
+                <ul class="contact__list">
+                  <li class="contact__item">
+                    <label class="text-field text-field--tel">
+                      <span class="text-field__label">Контактный телефон*:</span>
+                      <br>
+                      <input class="text-field__input" type="tel" name="contact" placeholder="Введите телефон" required>
+                    </label>
+                  </li>
+                  <li class="contact__item">
+                    <label class="text-field text-field--email">
+                      <span class="text-field__label">Электронная почта*:</span>
+                      <br>
+                      <input class="text-field__input" type="email" name="contact" placeholder="Введите e-mail" required>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="grade">
+            <fieldset class="grade__group">
+              <legend class="grade__title">Ваше общее впечатление:</legend>
+              <ul class="grade__list">
+                <li class="grade__item">
+                  <label class="choice grade__choice">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="positive" checked>
+                    <span class="choice__label">Скорее положительное</span>
+                  </label>
+                </li>
+                <li class="grade__item">
+                  <label class="choice grade__choice">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="negative">
+                    <span class="choice__label">Скорее отрицательное</span>
+                  </label>
+                </li>
+                <li class="grade__item">
+                  <label class="choice grade__choice">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="uncertain">
+                    <span class="choice__label">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="place">
+            <fieldset class="place__group">
+              <legend class="place__title">Ваше общее впечатление:</legend>
+              <ul class="place__list">
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Мост Дьявола" checked>
+                    <span class="choice__label">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Гора-Колокол" checked>
+                    <span class="choice__label">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Слайд-парк" checked>
+                    <span class="choice__label">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Красные скалы">
+                    <span class="choice__label">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="comment">
+            <fieldset class="comment__group">
+              <legend class="comment__title">Опишите свои эмоции:</legend>
+              <label class="text-field comment__text-field text-field--textarea">
+                <textarea class="text-field__input text-field__input--textarea" name="comment" rows="4" cols="160">Опишите подробно все свои восторги</textarea>
+              </label>
+            </fieldset>
+          </div>
+          <button class="button review__button" type="submit">Отправить отзыв</button>
+          <p class="review__necessarily">
+            <small>* — обязательные поля</small>
+          </p>
         </form>
       </section>
     </main>
