@@ -1,0 +1,31 @@
+$style-color: hsl(203, 47%, 66%);
+
+.advantages__box {
+  color: #ffffff;
+  text-align: center;
+
+  &--blue {
+    background-color: $style-color;
+  }
+
+  &--grey {
+    color: #333333;
+    background-color: hsl(0, 0%, 93%);
+  }
+}
+
+.advantages__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+

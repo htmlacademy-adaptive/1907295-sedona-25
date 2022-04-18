@@ -1,0 +1,23 @@
+.main-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.site-list__link {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
