@@ -1,0 +1,111 @@
+.main-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.site-list__link {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
+
+.promo-text__slogan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.promo-text__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.advantages__box {
+  color: #ffffff;
+  text-align: center;
+}
+.advantages__box--blue {
+  background-color: #80b2d1;
+}
+.advantages__box--grey {
+  color: #333333;
+  background-color: #ededed;
+}
+
+.advantages__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.search__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.search__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #80b2d1;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.guide__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.guide__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+/*# sourceMappingURL=style.css.map */
