@@ -1,16 +1,21 @@
-$style-color: hsl(203, 47%, 66%);
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .advantages__box {
-  color: #ffffff;
+  color: $base;
+  padding: 54px 19px 40px 19px;
   text-align: center;
 
   &--blue {
-    background-color: $style-color;
+    background-color: $style;
   }
 
   &--grey {
-    color: #333333;
-    background-color: hsl(0, 0%, 93%);
+    color: $text;
+    background-color: $box;
   }
 }
 
@@ -19,7 +24,6 @@ $style-color: hsl(203, 47%, 66%);
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .advantages__title {
@@ -27,4 +31,20 @@ $style-color: hsl(203, 47%, 66%);
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+  margin-bottom: 16px;
+}
+
+.advantages__number {
+  margin-top: 11px;
+  margin-bottom: 17px;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__sublist {
+  margin: 0;
+  padding-left: 65px;
+  list-style: none;
 }

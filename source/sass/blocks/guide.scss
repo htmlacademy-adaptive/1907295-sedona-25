@@ -1,13 +1,36 @@
+.guide__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guide__photo {
+  text-align: center;
+}
+
 .guide__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  margin-top: 15px;
+  color: $text;
 }
 
 .guide__author {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
+  color: $text;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+  margin-top: 12px;
+}
+
+.guide__likes {
+  margin-bottom: 30px;
 }

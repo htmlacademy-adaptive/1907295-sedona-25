@@ -1,13 +1,18 @@
-$style-color: hsl(203, 47%, 66%);
-
 .button {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color: #ffffff;
-  background-color: $style-color;
+  color: $base;
+  background-color: $style;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   border: 0;
+}
+
+.review__button,
+.search__button {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 0;
 }

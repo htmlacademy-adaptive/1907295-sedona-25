@@ -1,12 +1,12 @@
 .main-header {
-  color: #000000;
-  background-color: #ffffff;
+  color: $caption;
+  background-color: $base;
 }
 
 .main-navigation__list {
-  display: flex;
-  justify-content: space-between;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .site-list__link {
@@ -16,8 +16,14 @@
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
-  background-color: #ffffff;
-  padding-top: 18px;
-  padding-bottom: 17px;
+  color: $caption;
+  background-color: $base;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.main-header__logo {
+  display: block;
+  text-align: center;
 }
