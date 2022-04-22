@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+.guide__card {
+  margin: 0;
+  padding: 24px 20px 30px 20px;
+}
+
 .guide__photo {
   text-align: center;
 }
@@ -29,8 +34,4 @@
   padding: 0;
   margin-bottom: 11px;
   margin-top: 12px;
-}
-
-.guide__likes {
-  margin-bottom: 30px;
 }

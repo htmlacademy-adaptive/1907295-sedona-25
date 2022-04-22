@@ -5,6 +5,8 @@
 
 .choice__mark {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   width: 46px;
   height: 46px;
