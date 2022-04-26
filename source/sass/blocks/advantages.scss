@@ -6,32 +6,33 @@
 
 .advantages__box {
   color: $base;
-  padding: 54px 19px 40px 19px;
   text-align: center;
 
   &--blue {
     background-color: $style;
+    padding: 54px 19px 40px 19px;
   }
 
   &--grey {
     color: $text;
     background-color: $box;
+    padding: 24px 19px 24px 19px;
   }
 }
 
 .advantages__item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  &--sub {
+    p {
+      margin-top: 16px;
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .advantages__title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 16px;
 }
 
 .advantages__number {
@@ -44,21 +45,8 @@
 }
 
 .advantages__sublist {
-  margin: 0;
-  padding-top: 23px;
+  padding-top: 31px;
   padding-bottom: 52px;
   padding-left: 65px;
   list-style: none;
-}
-
-.advantages__item--sub p {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 25px;
-}
-
-.photo {
-  display: block;
-  margin: 0;
-  padding: 0;
 }

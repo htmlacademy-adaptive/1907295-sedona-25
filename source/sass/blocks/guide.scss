@@ -5,33 +5,17 @@
 }
 
 .guide__card {
-  margin: 0;
-  padding: 24px 20px 30px 20px;
-}
-
-.guide__photo {
-  text-align: center;
+  padding: 24px 20px 25px 20px;
 }
 
 .guide__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
   margin-bottom: 12px;
   margin-top: 15px;
-  color: $text;
+  color: $caption;
 }
 
 .guide__author {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: $text;
-  margin: 0;
-  padding: 0;
   margin-bottom: 11px;
   margin-top: 12px;
+  text-transform: initial;
 }

@@ -2,11 +2,22 @@
   background-image: url("../img/back-mobile.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
 }
 
+// .promo::after {
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   bottom: 0;
+//   background-image: url("../img/divider.svg");
+//   width: 320px;
+//   height: 57px;
+// }
+
 .promo__style {
-  margin: 0;
-  padding: 50px 19px 85px 19px;
+  display: block;
+  padding: 90px 19px 85px;
 }
 
 .promo-catalog {
@@ -16,6 +27,6 @@
 }
 
 .promo-catalog__style {
-  margin: 0;
-  padding: 12px 45px 67px 45px;
+  display: block;
+  padding: 52px 45px 67px 45px;
 }

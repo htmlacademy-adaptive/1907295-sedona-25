@@ -9,20 +9,3 @@
   text-transform: uppercase;
   border: none;
 }
-
-.review__button,
-.search__button {
-  display: inline-block;
-  width: 100%;
-  padding: 16px 0;
-}
-
-.guide__button {
-  background-color: transparent;
-  color: $caption;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-  padding: 0;
-}

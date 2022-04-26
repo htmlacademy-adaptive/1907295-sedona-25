@@ -1,60 +1,12 @@
 .main-footer {
   text-align: center;
   margin-top: 39px;
+  margin-bottom: 23px;
 }
 
 .main-footer__website {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-}
-
-.main-footer__social {
-  margin-top: 33px;
-  margin-bottom: 40px;
-}
-
-.social__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social__icon {
-  margin: 0;
-  padding-top: 17px;
-}
-
-.social__item {
-  margin-right: 6px;
-}
-
-.social__item:last-child {
-  margin-right: 0;
-}
-
-.social__link {
-  background-color: $style;
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-}
-
-.main-footer__copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 23px;
-}
-
-.copyright__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
   color: $caption;
-  margin-right: 11px;
 }

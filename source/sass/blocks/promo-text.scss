@@ -1,13 +1,10 @@
 .promo-text {
-  margin: 0;
-  padding: 32px 19px 16px 19px;
+  padding: 32px 19px 32px 19px;
 }
 
 .promo-text__slogan {
-  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-transform: uppercase;
   color: $caption;
   background-color: $base;
   text-align: center;
@@ -16,12 +13,6 @@
 }
 
 .promo-text__intro {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: $text;
-  background-color: $base;
   text-align: center;
   margin: 0;
 }

@@ -15,8 +15,7 @@
   border-radius: 4px;
 }
 
-.choice__input[type="checkbox"]:checked + .choice__mark::before,
-.choice__input[type="checkbox"]:checked + .choice__mark::after {
+.choice__input[type="checkbox"]:checked + .choice__mark::before {
   position: absolute;
   top: 15px;
   left: 12px;

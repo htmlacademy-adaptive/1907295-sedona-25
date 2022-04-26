@@ -1,0 +1,32 @@
+.contact {
+  padding: 24px 20px 34px 20px;
+}
+
+.contact__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $caption;
+  background-color: $base;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact__list {
+  @include clear-list;
+}
+
+.contact__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

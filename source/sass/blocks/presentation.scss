@@ -1,28 +1,19 @@
 .presentation {
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .presentation__question {
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 37px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-transform: uppercase;
+  margin: 0;
 }
 
 .presentation__invitation {
-  margin: 37px 27px 38px 27px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 37px 27px 38px 27px;
 }
 
 .presentation__player {
-  margin: 0;
   padding: 0 20px;
 }

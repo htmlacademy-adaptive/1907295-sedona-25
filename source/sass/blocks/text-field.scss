@@ -1,0 +1,22 @@
+.text-field__input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  color: $caption;
+  background-color: $input;
+  padding: 16px;
+  resize: none;
+
+  &::placeholder {
+    color: $caption;
+    background-color: $input;
+  }
+
+  &--textarea {
+    min-height: 150px;
+  }
+}
