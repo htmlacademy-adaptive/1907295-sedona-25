@@ -46,10 +46,16 @@ body {
   background-color: #ffffff;
 }
 
+.main-header__logo {
+  display: block;
+  text-align: center;
+}
+
 .main-navigation__list {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .site-list__link {
@@ -65,32 +71,25 @@ body {
   text-align: center;
 }
 
-.main-header__logo {
-  display: block;
-  text-align: center;
-}
-
 .promo {
   background-image: url("../img/back-mobile.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
 }
+.promo::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/divider.svg");
+  width: 320px;
+  height: 57px;
+}
 
 .promo__style {
   display: block;
   padding: 90px 19px 85px;
-}
-
-.promo-catalog {
-  background-image: url("../img/back-mobile.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
-.promo-catalog__style {
-  display: block;
-  padding: 52px 45px 67px 45px;
 }
 
 .promo-text {
@@ -112,14 +111,26 @@ body {
   margin: 0;
 }
 
+.promo-catalog {
+  background-image: url("../img/back-mobile.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.promo-catalog__style {
+  display: block;
+  padding: 52px 45px 67px 45px;
+}
+
 .country-card {
   display: block;
 }
 
 .advantages__list {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .advantages__box {
@@ -157,10 +168,13 @@ body {
 }
 
 .advantages__sublist {
+  list-style-type: none;
+  border: none;
+  margin: 0;
+  padding: 0;
   padding-top: 31px;
-  padding-bottom: 52px;
+  padding-bottom: 27px;
   padding-left: 65px;
-  list-style: none;
 }
 
 .search {
@@ -178,6 +192,12 @@ body {
 .search__description {
   margin: 0;
   margin-bottom: 32px;
+}
+
+.search__button {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 0;
 }
 
 .button {
@@ -204,26 +224,15 @@ body {
   text-align: right;
 }
 
-.search__button {
-  display: inline-block;
-  width: 100%;
-  padding: 16px 0;
-}
-
-.guide__button {
-  background-color: transparent;
-  color: #000000;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-  padding: 0;
-}
-
 .main-footer {
   text-align: center;
   margin-top: 39px;
   margin-bottom: 23px;
+}
+
+.main-footer__social {
+  margin-top: 33px;
+  margin-bottom: 40px;
 }
 
 .main-footer__website {
@@ -234,9 +243,10 @@ body {
 }
 
 .guide__list {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .guide__card {
@@ -253,6 +263,18 @@ body {
   margin-bottom: 11px;
   margin-top: 12px;
   text-transform: initial;
+}
+
+.guide__button {
+  list-style-type: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .presentation {
@@ -301,11 +323,9 @@ body {
   content: "";
   background-image: url("../img/icon/tick.svg");
 }
-
 .choice__input[type=radio] + .choice__mark {
   border-radius: 50%;
 }
-
 .choice__input[type=radio]:checked + .choice__mark::before {
   position: absolute;
   top: 15px;
@@ -317,24 +337,29 @@ body {
   content: "";
 }
 
-.main-footer__social {
-  margin-top: 33px;
-  margin-bottom: 40px;
+.choice__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  padding-left: 62px;
+  text-transform: initial;
 }
 
 .social__list {
+  list-style-type: none;
+  border: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .social__item {
   margin-right: 6px;
 }
-
 .social__item:last-child {
   margin-right: 0;
 }
@@ -368,9 +393,10 @@ body {
 }
 
 .nickname__group {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 .nickname__title {
@@ -386,6 +412,7 @@ body {
 
 .nickname__list {
   list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -402,9 +429,10 @@ body {
 }
 
 .contact__group {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 .contact__title {
@@ -420,6 +448,7 @@ body {
 
 .contact__list {
   list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -436,9 +465,10 @@ body {
 }
 
 .grade__group {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 .grade__title {
@@ -454,6 +484,7 @@ body {
 
 .grade__list {
   list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -470,24 +501,15 @@ body {
   margin-top: 20px;
 }
 
-.choice__label {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-  background-color: #ffffff;
-  padding-left: 62px;
-  text-transform: initial;
-}
-
 .place {
   padding: 24px 20px 34px 20px;
 }
 
 .place__group {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 .place__title {
@@ -503,6 +525,7 @@ body {
 
 .place__list {
   list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -524,9 +547,10 @@ body {
 }
 
 .comment__group {
+  list-style-type: none;
+  border: none;
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 .comment__title {
@@ -538,12 +562,6 @@ body {
   text-align: center;
   padding: 0;
   margin-bottom: 20px;
-}
-
-.comment__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .text-field__input {
