@@ -3,25 +3,6 @@
   background-color: $base;
 }
 
-.main-navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.site-list__link {
-  display: block;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-decoration: none;
-  color: $caption;
-  background-color: $base;
-  padding-top: 17px;
-  padding-bottom: 12px;
-  text-align: center;
-}
-
 .main-header__logo {
   display: block;
   text-align: center;

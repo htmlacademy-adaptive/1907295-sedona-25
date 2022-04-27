@@ -3,9 +3,7 @@
 }
 
 .grade__group {
-  margin: 0;
-  padding: 0;
-  border: none;
+  @include clear-list;
 }
 
 .grade__title {
@@ -35,14 +33,4 @@
   &:first-child {
     margin-top: 20px;
   }
-}
-
-.choice__label {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: $caption;
-  background-color: $base;
-  padding-left: 62px;
-  text-transform: initial;
 }

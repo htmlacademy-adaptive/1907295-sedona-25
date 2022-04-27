@@ -4,9 +4,3 @@ $caption: #000000;
 $text: #333333;
 $input: #f2f2f2;
 $base: #ffffff;
-
-@mixin clear-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}

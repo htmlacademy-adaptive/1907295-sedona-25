@@ -3,9 +3,7 @@
 }
 
 .comment__group {
-  margin: 0;
-  padding: 0;
-  border: none;
+  @include clear-list;
 }
 
 .comment__title {
@@ -17,8 +15,4 @@
   text-align: center;
   padding: 0;
   margin-bottom: 20px;
-}
-
-.comment__list {
-  @include clear-list;
 }

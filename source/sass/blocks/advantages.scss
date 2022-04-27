@@ -1,7 +1,5 @@
 .advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include clear-list;
 }
 
 .advantages__box {
@@ -45,8 +43,8 @@
 }
 
 .advantages__sublist {
+  @include clear-list;
   padding-top: 31px;
-  padding-bottom: 52px;
+  padding-bottom: 27px;
   padding-left: 65px;
-  list-style: none;
 }

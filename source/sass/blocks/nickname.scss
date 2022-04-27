@@ -3,9 +3,7 @@
 }
 
 .nickname__group {
-  margin: 0;
-  padding: 0;
-  border: none;
+  @include clear-list;
 }
 
 .nickname__title {

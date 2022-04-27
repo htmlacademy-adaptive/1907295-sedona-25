@@ -3,9 +3,7 @@
 }
 
 .place__group {
-  margin: 0;
-  padding: 0;
-  border: none;
+  @include clear-list;
 }
 
 .place__title {
