@@ -1,0 +1,50 @@
+.advantages__list {
+  @include clear-list;
+}
+
+.advantages__box {
+  color: $base;
+  text-align: center;
+
+  &--blue {
+    background-color: $style;
+    padding: 54px 19px 40px 19px;
+  }
+
+  &--grey {
+    color: $text;
+    background-color: $box;
+    padding: 24px 19px 24px 19px;
+  }
+}
+
+.advantages__item {
+  &--sub {
+    p {
+      margin-top: 16px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.advantages__number {
+  margin-top: 11px;
+  margin-bottom: 17px;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__sublist {
+  @include clear-list;
+  padding-top: 31px;
+  padding-bottom: 27px;
+  padding-left: 65px;
+}

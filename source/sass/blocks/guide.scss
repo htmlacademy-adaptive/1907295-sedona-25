@@ -1,0 +1,28 @@
+.guide__list {
+  @include clear-list;
+}
+
+.guide__card {
+  padding: 24px 20px 25px 20px;
+}
+
+.guide__title {
+  margin-bottom: 12px;
+  margin-top: 15px;
+  color: $caption;
+}
+
+.guide__author {
+  margin-bottom: 11px;
+  margin-top: 12px;
+  text-transform: initial;
+}
+
+.guide__button {
+  @include clear-list;
+  background-color: transparent;
+  color: $caption;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}

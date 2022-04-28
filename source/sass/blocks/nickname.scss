@@ -1,0 +1,30 @@
+.nickname {
+  padding: 24px 20px 39px 20px;
+}
+
+.nickname__group {
+  @include clear-list;
+}
+
+.nickname__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $caption;
+  background-color: $base;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.nickname__list {
+  @include clear-list;
+}
+
+.nickname__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

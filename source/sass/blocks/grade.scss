@@ -1,0 +1,36 @@
+.grade {
+  padding: 24px 20px 34px 20px;
+}
+
+.grade__group {
+  @include clear-list;
+}
+
+.grade__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $caption;
+  background-color: $base;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.grade__list {
+  @include clear-list;
+}
+
+.grade__item {
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
+
+  &:first-child {
+    margin-top: 20px;
+  }
+}

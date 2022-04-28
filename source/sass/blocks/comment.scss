@@ -1,0 +1,18 @@
+.comment {
+  padding: 24px 20px 56px 20px;
+}
+
+.comment__group {
+  @include clear-list;
+}
+
+.comment__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $caption;
+  background-color: $base;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
