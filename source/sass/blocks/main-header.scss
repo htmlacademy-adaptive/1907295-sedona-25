@@ -4,6 +4,7 @@
 }
 
 .main-header__logo {
-  display: block;
-  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

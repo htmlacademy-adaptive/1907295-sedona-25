@@ -1,5 +1,13 @@
 .promo-text {
   padding: 32px 19px 32px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 124px 56px 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 358px 45px 358px;
+  }
 }
 
 .promo-text__slogan {

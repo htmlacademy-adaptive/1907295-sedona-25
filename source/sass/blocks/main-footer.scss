@@ -1,12 +1,30 @@
-.main-footer {
+.main-footer__wrapper {
   text-align: center;
   margin-top: 39px;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 60px 36px 45px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 120px 36px 104px;
+    margin: 0 auto;
+  }
 }
 
 .main-footer__social {
   margin-top: 33px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .main-footer__website {
@@ -14,4 +32,11 @@
   font-size: 21px;
   line-height: 26px;
   color: $caption;
+  width: 166px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
