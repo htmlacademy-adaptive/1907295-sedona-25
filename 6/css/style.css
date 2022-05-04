@@ -66,6 +66,20 @@ body {
   transform: translateX(-50%);
 }
 
+@media (min-width: 320px) {
+  .main-navigation {
+    min-height: 56px;
+  }
+
+  .main-navigation__list {
+    display: none;
+  }
+
+  .main-navigation__toggle {
+    display: block;
+    margin-left: auto;
+  }
+}
 @media (min-width: 768px) {
   .main-navigation__wrapper {
     display: flex;
@@ -169,10 +183,37 @@ body {
 .promo-catalog__style {
   display: block;
   padding: 52px 45px 67px 45px;
+  margin: 0 auto;
 }
 
 .country-card {
   display: block;
+}
+@media (min-width: 768px) {
+  .country-card {
+    width: 512px;
+    height: 256px;
+  }
+}
+@media (min-width: 1200px) {
+  .country-card {
+    width: 800px;
+  }
+}
+
+.popular-card {
+  display: block;
+}
+@media (min-width: 768px) {
+  .popular-card {
+    width: 324px;
+    height: 267px;
+  }
+}
+@media (min-width: 1200px) {
+  .popular-card {
+    width: 400px;
+  }
 }
 
 .advantages__list {
@@ -214,7 +255,6 @@ body {
 }
 @media (min-width: 1200px) {
   .advantages__box--grey {
-    box-sizing: border-box;
     width: 400px;
     padding: 43px 43px 62px 42px;
   }
@@ -280,27 +320,9 @@ body {
     display: flex;
   }
 }
-@media (min-width: 1200px) {
-  .advantages__line {
-    display: flex;
-  }
-}
 
 .advantages__photo--beginning {
   order: -1;
-}
-
-@media (min-width: 768px) {
-  .country-card {
-    width: 512px;
-    height: 256px;
-  }
-}
-@media (min-width: 1200px) {
-  .country-card {
-    width: 800px;
-    height: 256px;
-  }
 }
 
 .search {
@@ -314,7 +336,8 @@ body {
 }
 @media (min-width: 1200px) {
   .search {
-    padding: 61px 371px 58px 371px;
+    padding-right: 371px;
+    padding-left: 371px;
   }
 }
 
@@ -338,7 +361,6 @@ body {
 @media (min-width: 768px) {
   .search__button {
     width: 458px;
-    padding: 16px 0;
   }
 }
 
@@ -381,10 +403,8 @@ body {
 }
 @media (min-width: 1200px) {
   .main-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 36px 120px 36px 104px;
-    margin: 0 auto;
+    padding-right: 120px;
+    padding-left: 104px;
   }
 }
 
@@ -749,6 +769,10 @@ body {
   min-height: 150px;
 }
 
+.text-field__label {
+  margin-left: 16px;
+}
+
 @media (min-width: 768px) {
   .land {
     width: 768px;
@@ -758,7 +782,6 @@ body {
 @media (min-width: 1200px) {
   .land {
     width: 1200px;
-    height: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */
