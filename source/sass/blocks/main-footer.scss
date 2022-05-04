@@ -11,10 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding: 36px 120px 36px 104px;
-    margin: 0 auto;
+    padding-right: 120px;
+    padding-left: 104px;
   }
 }
 
