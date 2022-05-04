@@ -1,3 +1,33 @@
+@media (min-width: $mobile-width) {
+  .main-navigation {
+    min-height: 56px;
+  }
+
+  .main-navigation__list {
+    display: none;
+  }
+
+  .main-navigation__toggle {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
+}
+
 .main-navigation__list {
   @include clear-list;
 }

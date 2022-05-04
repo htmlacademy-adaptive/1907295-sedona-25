@@ -9,4 +9,21 @@
   padding-top: 17px;
   padding-bottom: 12px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 }

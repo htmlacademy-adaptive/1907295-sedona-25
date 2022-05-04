@@ -1,12 +1,7 @@
-.container {
-  margin: 0 auto;
-
-  @media (min-width: $mobile-width) {
-    width: 320px;
-  }
-
+.land {
   @media (min-width: $tablet-width) {
     width: 768px;
+    height: 350px;
   }
 
   @media (min-width: $desktop-width) {

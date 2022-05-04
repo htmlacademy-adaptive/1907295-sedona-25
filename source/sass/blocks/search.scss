@@ -1,6 +1,15 @@
 .search {
   text-align: center;
   padding: 39px 19px 49px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 155px 58px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 371px;
+    padding-left: 371px;
+  }
 }
 
 .search__title {
@@ -19,4 +28,8 @@
   display: inline-block;
   width: 100%;
   padding: 16px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
