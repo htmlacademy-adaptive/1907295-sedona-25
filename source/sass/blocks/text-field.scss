@@ -19,6 +19,23 @@
   &--textarea {
     min-height: 150px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+
+    &--textarea {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+
+    &--textarea {
+      width: 768px;
+      min-height: 160px;
+    }
+  }
 }
 
 .text-field__label {

@@ -1,5 +1,16 @@
 .presentation {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    margin-bottom: 84px;
+  }
 }
 
 .presentation__question {
@@ -7,13 +18,35 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+  }
 }
 
 .presentation__invitation {
   margin: 0;
   padding: 37px 27px 38px 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 101px;
+    padding-right: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 177px;
+    padding-right: 178px;
+  }
 }
 
 .presentation__player {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

@@ -1,5 +1,13 @@
 .place {
   padding: 24px 20px 34px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 84px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 45px 87px;
+  }
 }
 
 .place__group {
@@ -15,10 +23,25 @@
   text-align: center;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .place__list {
   @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    gap: 16px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .place__item {
@@ -32,5 +55,17 @@
 
   &:first-child {
     margin-top: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:first-child {
+      margin: 0;
+    }
   }
 }

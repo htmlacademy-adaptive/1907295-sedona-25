@@ -1,5 +1,10 @@
 .nickname {
   padding: 24px 20px 39px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-right: auto;
+  }
 }
 
 .nickname__group {
@@ -15,6 +20,10 @@
   text-align: center;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .nickname__list {
