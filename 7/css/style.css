@@ -209,15 +209,19 @@ body {
     width: 324px;
     height: 267px;
   }
+}
+@media (min-width: 1200px) {
+  .popular-card {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) {
   .popular-card--prime {
     width: 648px;
     height: 400px;
   }
 }
 @media (min-width: 1200px) {
-  .popular-card {
-    width: 400px;
-  }
   .popular-card--prime {
     width: 1200px;
   }
@@ -498,14 +502,13 @@ body {
   .guide__card {
     padding: 0;
   }
+}
+@media (min-width: 768px) {
   .guide__card--sub {
     grid-column: 1/3;
   }
 }
 @media (min-width: 1200px) {
-  .guide__card {
-    padding: 0;
-  }
   .guide__card--sub {
     grid-column: 1/4;
   }
@@ -896,27 +899,30 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.grade__item:last-child {
-  margin-bottom: 24px;
-}
-.grade__item:first-child {
-  margin-top: 20px;
-}
 @media (min-width: 768px) {
   .grade__item {
-    margin: 0;
-  }
-  .grade__item:last-child {
-    margin: 0;
-  }
-  .grade__item:first-child {
     margin: 0;
   }
 }
 @media (min-width: 1200px) {
   .grade__item {
-    margin: 0;
     width: 280px;
+  }
+}
+.grade__item:last-child {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .grade__item:last-child {
+    margin: 0;
+  }
+}
+.grade__item:first-child {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .grade__item:first-child {
+    margin: 0;
   }
 }
 
@@ -982,19 +988,23 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .place__item {
+    margin: 0;
+  }
+}
 .place__item:last-child {
   margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .place__item:last-child {
+    margin: 0;
+  }
 }
 .place__item:first-child {
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  .place__item {
-    margin: 0;
-  }
-  .place__item:last-child {
-    margin: 0;
-  }
   .place__item:first-child {
     margin: 0;
   }
@@ -1051,6 +1061,16 @@ body {
   padding: 16px;
   resize: none;
 }
+@media (min-width: 768px) {
+  .text-field__input {
+    width: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .text-field__input {
+    width: 430px;
+  }
+}
 .text-field__input::placeholder {
   color: #000000;
   background-color: #f2f2f2;
@@ -1059,17 +1079,11 @@ body {
   min-height: 150px;
 }
 @media (min-width: 768px) {
-  .text-field__input {
-    width: 280px;
-  }
   .text-field__input--textarea {
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  .text-field__input {
-    width: 430px;
-  }
   .text-field__input--textarea {
     width: 768px;
     min-height: 160px;
