@@ -1,5 +1,14 @@
 .comment {
   padding: 24px 20px 56px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 96px;
+  }
 }
 
 .comment__group {
@@ -15,4 +24,8 @@
   text-align: center;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }

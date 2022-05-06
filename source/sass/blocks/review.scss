@@ -1,7 +1,26 @@
+.review {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
 .review__button {
   display: inline-block;
   width: 100%;
   padding: 16px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+  }
 }
 
 .review__necessarily {

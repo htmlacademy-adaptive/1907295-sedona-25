@@ -11,6 +11,14 @@
   padding: 16px;
   resize: none;
 
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+
   &::placeholder {
     color: $caption;
     background-color: $input;
@@ -18,6 +26,15 @@
 
   &--textarea {
     min-height: 150px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 768px;
+      min-height: 160px;
+    }
   }
 }
 
