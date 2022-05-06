@@ -27,16 +27,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-
-    &--sub {
-      grid-column: 1/3;
-    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
+  &--sub {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/3;
+    }
 
-    &--sub {
+    @media (min-width: $desktop-width) {
       grid-column: 1/4;
     }
   }

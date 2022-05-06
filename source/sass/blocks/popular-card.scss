@@ -4,17 +4,19 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 267px;
-
-    &--prime {
-      width: 648px;
-      height: 400px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
+  }
 
-    &--prime {
+  &--prime {
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 1200px;
     }
   }
