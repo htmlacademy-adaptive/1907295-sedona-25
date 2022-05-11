@@ -1,33 +1,113 @@
-@media (min-width: $mobile-width) {
-  .main-navigation {
-    min-height: 56px;
+.main-navigation {
+  min-height: 56px;
+  position: relative;
+
+  &--closed {
+    .main-navigation__toggle {
+      position: absolute;
+      background-image: url("../img/icon-menu.svg");
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 22px;
+      border: none;
+      top: 17px;
+      right: 20px;
+      background-color: $base;
+
+      &:hover {
+        fill: $style;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $style;
+        opacity: 0.3;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    .main-navigation__wrapper {
+      @media (min-width: $mobile-width) {
+        display: none;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 
-  .main-navigation__list {
-    display: none;
+  &--opened {
+    .main-navigation__toggle {
+      position: absolute;
+      background-image: url("../img/icon/icon-cross.svg");
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 22px;
+      border: none;
+      top: 17px;
+      right: 20px;
+      z-index: 2;
+      background-color: $style;
+
+      &:hover {
+        fill: $style;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $style;
+        opacity: 0.3;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    .main-navigation__wrapper {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 
-  .main-navigation__toggle {
-    display: block;
-    margin-left: auto;
-  }
-}
+  &--nojs {
+    .main-navigation__toggle {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
 
-@media (min-width: $tablet-width) {
-  .main-navigation__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+    .main-navigation__wrapper {
+      position: absolute;
+    }
 
-  .main-navigation__toggle {
-    display: none;
-  }
-
-  .main-navigation__list {
-    display: flex;
+    .site-list__item {
+      display: block;
+    }
   }
 }
 
 .main-navigation__list {
   @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
