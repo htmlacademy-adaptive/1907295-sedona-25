@@ -14,15 +14,15 @@
       right: 20px;
       background-color: $base;
 
-      &:hover {
-        fill: $style;
-        opacity: 0.6;
-      }
+      // &:hover {
+      //   fill: $style;
+      //   opacity: 0.6;
+      // }
 
-      &:active {
-        fill: $style;
-        opacity: 0.3;
-      }
+      // &:active {
+      //   fill: $style;
+      //   opacity: 0.3;
+      // }
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -54,15 +54,15 @@
       z-index: 2;
       background-color: $style;
 
-      &:hover {
-        fill: $style;
-        opacity: 0.6;
-      }
+      // &:hover {
+      //   fill: $style;
+      //   opacity: 0.6;
+      // }
 
-      &:active {
-        fill: $style;
-        opacity: 0.3;
-      }
+      // &:active {
+      //   fill: $style;
+      //   opacity: 0.3;
+      // }
 
       @media (min-width: $tablet-width) {
         display: none;
