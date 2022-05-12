@@ -4,37 +4,16 @@
 
   &--closed {
     .main-navigation__toggle {
-      position: absolute;
       background-image: url("../img/icon-menu.svg");
       background-repeat: no-repeat;
-      width: 23px;
-      height: 22px;
-      border: none;
-      top: 17px;
-      right: 20px;
-      background-color: $base;
-
-      // &:hover {
-      //   fill: $style;
-      //   opacity: 0.6;
-      // }
-
-      // &:active {
-      //   fill: $style;
-      //   opacity: 0.3;
-      // }
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
+      z-index: 1;
     }
 
     .main-navigation__wrapper {
-      @media (min-width: $mobile-width) {
-        display: none;
-      }
+      display: none;
 
       @media (min-width: $tablet-width) {
+        position: static;
         display: flex;
         justify-content: space-between;
       }
@@ -43,58 +22,46 @@
 
   &--opened {
     .main-navigation__toggle {
-      position: absolute;
       background-image: url("../img/icon/icon-cross.svg");
       background-repeat: no-repeat;
-      width: 23px;
-      height: 22px;
-      border: none;
-      top: 17px;
-      right: 20px;
       z-index: 2;
-      background-color: $style;
-
-      // &:hover {
-      //   fill: $style;
-      //   opacity: 0.6;
-      // }
-
-      // &:active {
-      //   fill: $style;
-      //   opacity: 0.3;
-      // }
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
     }
 
     .main-navigation__wrapper {
       position: absolute;
       z-index: 1;
       width: 100%;
-
-      @media (min-width: $tablet-width) {
-        display: flex;
-        justify-content: space-between;
-      }
     }
   }
 
-  &--nojs {
-    .main-navigation__toggle {
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
+  // &--nojs {
+  //   .main-navigation__toggle {
+  //     display: none;
+  //   }
+  // }
+}
 
-    .main-navigation__wrapper {
-      position: absolute;
-    }
+.main-navigation__toggle {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  top: 17px;
+  right: 20px;
 
-    .site-list__item {
-      display: block;
-    }
+  &:hover {
+    fill: $style;
+    opacity: 0.6;
+  }
+
+  &:active {
+    fill: $style;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

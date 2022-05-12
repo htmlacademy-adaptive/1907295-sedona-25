@@ -29,6 +29,14 @@
   width: 100%;
   padding: 16px 0;
 
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    color: lighten($style, 20%);
+  }
+
   @media (min-width: $tablet-width) {
     width: 458px;
   }

@@ -23,17 +23,15 @@
   &--decor {
     padding: 54px 19px 40px 19px;
 
-    @media (min-width: $mobile-width) {
-      &::before {
-        content: "";
-        background-color: $base;
-        width: 100%;
-        height: 37px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        clip-path: polygon(100% 0, 50% 80%, 0 0);
-      }
+    &::before {
+      content: "";
+      background-color: $base;
+      width: 100%;
+      height: 37px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      clip-path: polygon(100% 0, 50% 80%, 0 0);
     }
 
     @media (min-width: $tablet-width) {
@@ -101,26 +99,84 @@
     }
   }
 
+  &--house {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-house.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      width: 39px;
+      height: 37px;
+      top: 25px;
+      left: 18px;
+
+      @media (min-width: $tablet-width) {
+        width: 75px;
+        height: 72px;
+        top: 60px;
+        left: 90px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 59px;
+        left: 161px;
+      }
+    }
+  }
+
+  &--food {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      width: 39px;
+      height: 37px;
+      top: 25px;
+      left: 18px;
+
+      @media (min-width: $tablet-width) {
+        width: 76px;
+        height: 68px;
+        top: 60px;
+        left: 90px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 59px;
+        left: 161px;
+      }
+    }
+  }
+
   &--souvenirs {
     padding-bottom: 52px;
-  }
-}
 
-.advantages__icon {
-  @media (min-width: $mobile-width) {
-    position: absolute;
-    top: 25px;
-    left: 18px;
-  }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      width: 32px;
+      height: 38px;
+      top: 25px;
+      left: 18px;
 
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    padding-top: 60px;
+      @media (min-width: $tablet-width) {
+        width: 64px;
+        height: 75px;
+        top: 60px;
+        left: 90px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 59px;
+        left: 161px;
+      }
+    }
   }
 }
 
@@ -128,6 +184,14 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+  position: relative;
+
+  &::before {
+    &--house {
+      position: absolute;
+      background-image: url("../img/icon-house.svg");
+    }
+  }
 }
 
 .advantages__number {
@@ -141,6 +205,7 @@
 
 .advantages__sublist {
   @include clear-list;
+  position: relative;
 
   &::before,
   &::after {

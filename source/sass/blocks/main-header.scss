@@ -1,6 +1,16 @@
 .main-header {
   color: $caption;
   background-color: $base;
+
+  &--nojs {
+    .main-navigation__toggle {
+      display: none;
+    }
+
+    .main-header__logo {
+      display: none;
+    }
+  }
 }
 
 .main-header__logo {

@@ -37,7 +37,8 @@
   }
 
   &:active {
-    color: lighten($caption, 30%);
+    color: $current;
+    opacity: 0.3;
   }
 
   &:focus {
