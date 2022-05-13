@@ -112,6 +112,11 @@ body {
   top: 17px;
   right: 20px;
 }
+@media (min-width: 768px) {
+  .main-navigation__toggle {
+    display: none;
+  }
+}
 .main-navigation__toggle:hover {
   fill: #81b3d2;
   opacity: 0.6;
@@ -119,11 +124,6 @@ body {
 .main-navigation__toggle:active {
   fill: #81b3d2;
   opacity: 0.3;
-}
-@media (min-width: 768px) {
-  .main-navigation__toggle {
-    display: none;
-  }
 }
 
 .main-navigation__list {
@@ -353,6 +353,10 @@ body {
   color: #333333;
   background-color: #eeeeee;
   padding: 24px 19px 24px 19px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.advantages__box--grey:last-child {
+  border-bottom: none;
 }
 @media (min-width: 768px) {
   .advantages__box--grey {
@@ -369,22 +373,6 @@ body {
   }
 }
 
-@media (min-width: 320px) {
-  .advantages__item {
-    border-bottom: 1px solid #d6d6d6;
-  }
-  .advantages__item:last-child {
-    border-bottom: none;
-  }
-}
-@media (min-width: 768px) {
-  .advantages__item {
-    border: none;
-  }
-}
-.advantages__item::before, .advantages__item::after {
-  box-sizing: border-box;
-}
 .advantages__item--sub {
   padding-top: 31px;
   padding-left: 65px;
@@ -484,16 +472,15 @@ body {
     left: 161px;
   }
 }
+.advantages__item::before, .advantages__item::after {
+  box-sizing: border-box;
+}
 
 .advantages__title {
   font-size: 18px;
   line-height: 26px;
   margin: 0;
   position: relative;
-}
-.advantages__title::before--house {
-  position: absolute;
-  background-image: url("../img/icon-house.svg");
 }
 
 .advantages__number {
@@ -512,15 +499,15 @@ body {
   padding: 0;
   position: relative;
 }
-.advantages__sublist::before, .advantages__sublist::after {
-  box-sizing: border-box;
-}
 @media (min-width: 768px) {
   .advantages__sublist {
     display: flex;
     text-align: center;
     padding: 0;
   }
+}
+.advantages__sublist::before, .advantages__sublist::after {
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -566,16 +553,16 @@ body {
   width: 100%;
   padding: 16px 0;
 }
+@media (min-width: 768px) {
+  .search__button {
+    width: 458px;
+  }
+}
 .search__button:hover {
   background-color: #669ec0;
 }
 .search__button:active {
   color: #cce0ed;
-}
-@media (min-width: 768px) {
-  .search__button {
-    width: 458px;
-  }
 }
 
 .button {
@@ -1295,10 +1282,6 @@ body {
     width: 430px;
   }
 }
-.text-field__input::placeholder {
-  color: #000000;
-  background-color: #f2f2f2;
-}
 .text-field__input--textarea {
   min-height: 150px;
 }
@@ -1312,6 +1295,10 @@ body {
     width: 768px;
     min-height: 160px;
   }
+}
+.text-field__input::placeholder {
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 .text-field__label {
