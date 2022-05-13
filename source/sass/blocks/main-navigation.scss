@@ -33,12 +33,6 @@
       width: 100%;
     }
   }
-
-  // &--nojs {
-  //   .main-navigation__toggle {
-  //     display: none;
-  //   }
-  // }
 }
 
 .main-navigation__toggle {
@@ -50,6 +44,10 @@
   top: 17px;
   right: 20px;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   &:hover {
     fill: $style;
     opacity: 0.6;
@@ -58,10 +56,6 @@
   &:active {
     fill: $style;
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 

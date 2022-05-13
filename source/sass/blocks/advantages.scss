@@ -32,10 +32,8 @@
       top: 0;
       left: 0;
       clip-path: polygon(100% 0, 50% 80%, 0 0);
-    }
 
-    @media (min-width: $tablet-width) {
-      &::before {
+      @media (min-width: $tablet-width) {
         display: none;
       }
     }
@@ -45,6 +43,11 @@
     color: $text;
     background-color: $box;
     padding: 24px 19px 24px 19px;
+    border-bottom: 1px solid $delimiter;
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     @media (min-width: $tablet-width) {
       box-sizing: border-box;
@@ -61,23 +64,6 @@
 }
 
 .advantages__item {
-  @media (min-width: $mobile-width) {
-    border-bottom: 1px solid $delimiter;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-
   &--sub {
     padding-top: 31px;
     padding-left: 65px;
@@ -178,6 +164,11 @@
       }
     }
   }
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }
 
 .advantages__title {
@@ -185,13 +176,6 @@
   line-height: 26px;
   margin: 0;
   position: relative;
-
-  &::before {
-    &--house {
-      position: absolute;
-      background-image: url("../img/icon-house.svg");
-    }
-  }
 }
 
 .advantages__number {
@@ -207,15 +191,15 @@
   @include clear-list;
   position: relative;
 
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     text-align: center;
     padding: 0;
+  }
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
   }
 }
 
