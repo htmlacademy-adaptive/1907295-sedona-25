@@ -32,4 +32,12 @@
   @media (min-width: $tablet-width) {
     width: 458px;
   }
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    color: lighten($style, 20%);
+  }
 }

@@ -31,6 +31,19 @@
   line-height: 26px;
   color: $caption;
   width: 166px;
+
+  &:hover {
+    color: $style;
+  }
+
+  &:active {
+    color: $current;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    color: $current;
+  }
 }
 
 .main-footer__copyright {

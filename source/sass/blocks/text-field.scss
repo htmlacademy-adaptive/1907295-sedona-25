@@ -19,11 +19,6 @@
     width: 430px;
   }
 
-  &::placeholder {
-    color: $caption;
-    background-color: $input;
-  }
-
   &--textarea {
     min-height: 150px;
 
@@ -35,6 +30,11 @@
       width: 768px;
       min-height: 160px;
     }
+  }
+
+  &::placeholder {
+    color: $caption;
+    background-color: $input;
   }
 }
 

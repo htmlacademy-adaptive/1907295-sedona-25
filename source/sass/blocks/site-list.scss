@@ -4,8 +4,8 @@
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
-  color: $caption;
-  background-color: $base;
+  color: $base;
+  background-color: $style;
   padding-top: 17px;
   padding-bottom: 12px;
   text-align: center;
@@ -15,12 +15,50 @@
     padding-bottom: 17px;
     font-size: 14px;
     line-height: 21px;
+    color: $caption;
+    background: none;
+
+    &:hover {
+      color: $style;
+    }
+
+    &:active {
+      color: $current;
+      opacity: 0.3;
+    }
+
+    &:focus {
+      color: $current;
+    }
   }
 }
 
 .site-list__item {
+  @media (min-width: $mobile-width) {
+    border-bottom: 1px solid $volume-bottom;
+    border-top: 1px solid $volume-top;
+
+    &:last-child {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        height: 7px;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 153px;
+    border: none;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

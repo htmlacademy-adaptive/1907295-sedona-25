@@ -20,4 +20,19 @@
   height: 48px;
   box-sizing: border-box;
   padding-top: 17px;
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+}
+
+.social__icon {
+  &:active {
+    color: $base;
+    opacity: 0.3;
+  }
 }
