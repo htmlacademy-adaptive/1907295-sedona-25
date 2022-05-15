@@ -40,4 +40,8 @@
   &:active {
     color: lighten($style, 20%);
   }
+
+  &:disabled {
+    background-color: $line;
+  }
 }

@@ -1,18 +1,36 @@
 .comment {
   padding: 24px 20px 56px 20px;
+  border-top: 1px solid $line;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-bottom: 64px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 96px;
+    border: none;
   }
 }
 
-.comment__group {
-  @include clear-list;
+.comment__line {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 100%;
+      background-color: $devider;
+      z-index: -1;
+    }
+  }
+}
+
+.comment__wrapper {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .comment__title {
@@ -23,9 +41,5 @@
   background-color: $base;
   text-align: center;
   padding: 0;
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
-  }
+  margin: 0;
 }

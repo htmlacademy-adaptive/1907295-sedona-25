@@ -1,9 +1,11 @@
 .contact {
   padding: 24px 20px 34px 20px;
+  border-top: 1px solid $line;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-left: auto;
+    border: none;
   }
 }
 

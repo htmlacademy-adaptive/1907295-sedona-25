@@ -8,14 +8,13 @@
   </head>
   <body class="page__body">
     <div class="container">
-      <header class="main-header">
+      <header class="main-header main-header--nojs">
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/></svg>
           </button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
@@ -27,10 +26,10 @@
               </li>
             </ul>
             <ul class="main-navigation__list main-navigation__list--user site-list">
-              <li class="site-list__item site-list__item">
+              <li class="site-list__item">
                 <a class="site-list__link">Форма отзыва</a>
               </li>
-              <li class="site-list__item site-list__item">
+              <li class="site-list__item">
                 <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
               </li>
             </ul>
@@ -82,96 +81,108 @@
                   <legend class="contact__title">Контактная информация:</legend>
                   <ul class="contact__list">
                     <li class="contact__item">
-                      <label class="text-field text-field--tel">
-                        <span class="text-field__label">Контактный телефон*:</span>
-                        <input class="text-field__input" type="tel" name="contact" placeholder="Введите телефон" required>
-                        <!-- <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/></svg> -->
-                      </label>
+                      <span class="contact__label">Контактный телефон*:</span>
+                      <div class="contact__line">
+                        <label class="text-field">
+                          <input class="text-field__input text-field__input--info" type="tel" name="contact" placeholder="Введите телефон" required>
+                          <svg class="text-field__icon" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/></svg>
+                        </label>
+                      </div>
                     </li>
                     <li class="contact__item">
-                      <label class="text-field text-field--email">
-                        <span class="text-field__label">Электронная почта*:</span>
-                        <input class="text-field__input" type="email" name="contact" placeholder="Введите e-mail" required>
-                        <!-- <svg width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/></svg> -->
-                      </label>
+                      <span class="contact__label">Электронная почта*:</span>
+                      <div class="contact__line">
+                        <label class="text-field">
+                          <input class="text-field__input text-field__input--info" type="email" name="contact" placeholder="Введите e-mail" required>
+                          <svg class="text-field__icon text-field__icon--email" width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/></svg>
+                        </label>
+                      </div>
                     </li>
                   </ul>
                 </fieldset>
               </div>
             </div>
             <div class="grade">
-              <fieldset class="grade__group">
-                <legend class="grade__title">Ваше общее впечатление:</legend>
-                <ul class="grade__list">
-                  <li class="grade__item">
-                    <label class="choice grade__choice">
-                      <input class="visually-hidden choice__input" type="radio" name="grade" value="positive" checked>
-                      <span class="choice__mark"></span>
-                      <span class="choice__label">Скорее положительное</span>
-                    </label>
-                  </li>
-                  <li class="grade__item">
-                    <label class="choice grade__choice">
-                      <input class="visually-hidden choice__input" type="radio" name="grade" value="negative">
-                      <span class="choice__mark"></span>
-                      <span class="choice__label">Скорее отрицательное</span>
-                    </label>
-                  </li>
-                  <li class="grade__item">
-                    <label class="choice grade__choice">
-                      <input class="visually-hidden choice__input" type="radio" name="grade" value="uncertain">
-                      <span class="choice__mark"></span>
-                      <span class="choice__label">Затрудняюсь ответить</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="grade__line">
+                <div class="grade__wrapper">
+                  <h2 class="grade__title">Ваше общее впечатление:</h2>
+                </div>
+              </div>
+              <ul class="grade__list">
+                <li class="grade__item">
+                  <label class="choice grade__choice">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="positive" checked>
+                    <span class="choice__mark"></span>
+                    <span class="choice__label">Скорее положительное</span>
+                  </label>
+                </li>
+                <li class="grade__item">
+                  <label class="choice grade__choice">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="negative">
+                    <span class="choice__mark"></span>
+                    <span class="choice__label">Скорее отрицательное</span>
+                  </label>
+                </li>
+                <li class="grade__item">
+                  <label class="choice grade__choice">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="uncertain">
+                    <span class="choice__mark"></span>
+                    <span class="choice__label">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
             </div>
             <div class="place">
-              <fieldset class="place__group">
-                <legend class="place__title">Посещенные достопримечательности:</legend>
-                <ul class="place__list">
-                  <li class="place__item">
-                    <label class="choice place__choice choice--checkbox">
-                      <input class="visually-hidden choice__input" type="checkbox" name="place" value="Мост Дьявола" checked>
-                      <span class="choice__mark"></span>
-                      <span class="choice__label">Мост Дьявола</span>
-                    </label>
-                  </li>
-                  <li class="place__item">
-                    <label class="choice place__choice choice--checkbox">
-                      <input class="visually-hidden choice__input" type="checkbox" name="place" value="Гора-Колокол" checked>
-                      <span class="choice__mark"></span>
-                      <span class="choice__label">Гора-Колокол</span>
-                    </label>
-                  </li>
-                  <li class="place__item">
-                    <label class="choice place__choice choice--checkbox">
-                      <input class="visually-hidden choice__input" type="checkbox" name="place" value="Слайд-парк" checked>
-                      <span class="choice__mark"></span>
-                      <span class="choice__label">Слайд-парк</span>
-                    </label>
-                  </li>
-                  <li class="place__item">
-                    <label class="choice place__choice choice--checkbox">
-                      <input class="visually-hidden choice__input" type="checkbox" name="place" value="Красные скалы">
-                      <span class="choice__mark"></span>
-                      <span class="choice__label">Красные скалы</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="place__line">
+                <div class="place__wrapper">
+                  <h2 class="place__title">Посещенные достопримечательности:</h2>
+                </div>
+              </div>
+              <ul class="place__list">
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Мост Дьявола" checked>
+                    <span class="choice__mark"></span>
+                    <span class="choice__label">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Гора-Колокол" checked>
+                    <span class="choice__mark"></span>
+                    <span class="choice__label">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Слайд-парк" checked>
+                    <span class="choice__mark"></span>
+                    <span class="choice__label">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="place__item">
+                  <label class="choice place__choice choice--checkbox">
+                    <input class="visually-hidden choice__input" type="checkbox" name="place" value="Красные скалы">
+                    <span class="choice__mark"></span>
+                    <span class="choice__label">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
             </div>
             <div class="comment">
-              <fieldset class="comment__group">
-                <legend class="comment__title">Опишите свои эмоции:</legend>
-                <label class="text-field comment__text-field text-field--textarea">
-                  <textarea class="text-field__input text-field__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
-                </label>
-              </fieldset>
+              <div class="comment__line">
+                <div class="comment__wrapper">
+                  <h2 class="comment__title">Опишите свои эмоции:</h2>
+                </div>
+              </div>
+              <label class="text-field comment__text-field text-field--textarea">
+                <textarea class="text-field__input text-field__input--textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+              </label>
             </div>
-            <button class="button review__button" type="submit">Отправить отзыв</button>
-            <p class="review__necessarily">* — обязательные поля</p>
+            <div class="sending">
+              <button class="button review__button" type="submit">Отправить отзыв</button>
+              <p class="review__necessarily">* — обязательные поля</p>
+            </div>
           </form>
         </section>
       </main>
@@ -210,5 +221,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

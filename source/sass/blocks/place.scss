@@ -1,17 +1,44 @@
 .place {
-  padding: 24px 20px 34px 20px;
+  padding: 24px 20px;
+  border-top: 1px solid $line;
 
   @media (min-width: $tablet-width) {
-    padding: 0 84px 42px;
+    padding: 0;
+    padding-bottom: 42px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 45px 87px;
+    padding-bottom: 87px;
   }
 }
 
-.place__group {
-  @include clear-list;
+.place__line {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 100%;
+      background-color: $devider;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.place__wrapper {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .place__title {
@@ -22,10 +49,11 @@
   background-color: $base;
   text-align: center;
   padding: 0;
-  margin-bottom: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+    padding: 0 47px;
   }
 }
 
@@ -33,6 +61,7 @@
   @include clear-list;
 
   @media (min-width: $tablet-width) {
+    padding: 0 84px;
     display: grid;
     grid-template-columns: 224px 224px;
     gap: 16px 32px;
@@ -41,6 +70,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding: 0 45px;
   }
 }
 
@@ -54,18 +84,6 @@
   }
 
   &:last-child {
-    margin-bottom: 24px;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
-  }
-
-  &:first-child {
-    margin-top: 20px;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
+    margin: 0;
   }
 }

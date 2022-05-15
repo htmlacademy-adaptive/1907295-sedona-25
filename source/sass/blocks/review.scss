@@ -21,10 +21,22 @@
   @media (min-width: $desktop-width) {
     width: 384px;
   }
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    color: lighten($style, 20%);
+  }
 }
 
 .review__necessarily {
   margin: 0;
   margin-top: 3px;
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
