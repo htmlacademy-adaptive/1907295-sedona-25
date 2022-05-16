@@ -27,6 +27,7 @@ body {
 
 .container {
   margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 320px) {
   .container {
@@ -229,10 +230,22 @@ body {
   .promo-text {
     padding: 47px 124px 56px 124px;
   }
+  .promo-text--wide {
+    padding: 62px 155px 63px 155px;
+  }
+  .promo-text--form {
+    padding: 64px 166px 102px 165px;
+  }
 }
 @media (min-width: 1200px) {
   .promo-text {
     padding: 59px 358px 45px 358px;
+  }
+  .promo-text--wide {
+    padding: 100px 371px 65px 371px;
+  }
+  .promo-text--form {
+    padding: 115px 383px 67px 383px;
   }
 }
 
@@ -244,6 +257,32 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .promo-text__slogan {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+.promo-text__slogan--catalog {
+  font-size: 21px;
+  line-height: 26px;
+}
+@media (min-width: 768px) {
+  .promo-text__slogan--catalog {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+.promo-text__slogan--form {
+  font-size: 21px;
+  line-height: 26px;
+}
+@media (min-width: 768px) {
+  .promo-text__slogan--form {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .promo-text__intro {
@@ -322,7 +361,7 @@ body {
 }
 @media (min-width: 768px) {
   .advantages__box--blue {
-    padding: 40px 32px 44px 32px;
+    padding: 43px 36px 41px 36px;
   }
 }
 @media (min-width: 1200px) {
@@ -332,6 +371,13 @@ body {
 }
 .advantages__box--decor {
   padding: 54px 19px 40px 19px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .advantages__box--decor {
+    font-weight: 400;
+    padding: 40px 32px 44px 32px;
+  }
 }
 .advantages__box--decor::before {
   content: "";
@@ -362,7 +408,7 @@ body {
   .advantages__box--grey {
     box-sizing: border-box;
     width: 256px;
-    padding: 42px 32px 63px 32px;
+    padding: 42px 32px 41px 32px;
     border: none;
   }
 }
@@ -383,15 +429,20 @@ body {
   margin-top: 16px;
 }
 @media (min-width: 768px) {
+  .advantages__item--sub p {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
   .advantages__item--sub {
     width: 256px;
-    padding: 158px 36px 34px 35px;
+    padding: 158px 36px 59px 35px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item--sub {
     width: 400px;
-    padding: 158px 44px 55px 43px;
+    padding: 159px 59px 80px 59px;
   }
 }
 .advantages__item--house::before {
@@ -481,6 +532,16 @@ body {
   line-height: 26px;
   margin: 0;
   position: relative;
+  color: #000000;
+}
+.advantages__title--white {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .advantages__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .advantages__number {
@@ -533,6 +594,7 @@ body {
   .search {
     padding-right: 371px;
     padding-left: 371px;
+    padding-bottom: 66px;
   }
 }
 
@@ -541,11 +603,28 @@ body {
   line-height: 26px;
   margin: 0;
   margin-bottom: 30px;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .search__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .search__description {
   margin: 0;
   margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .search__description {
+    margin-bottom: 41px;
+  }
+}
+@media (min-width: 1200px) {
+  .search__description {
+    margin-bottom: 46px;
+  }
 }
 
 .search__button {
@@ -737,6 +816,8 @@ body {
   margin-bottom: 12px;
   margin-top: 15px;
   color: #000000;
+  font-size: 14px;
+  line-height: 21px;
 }
 @media (min-width: 768px) {
   .guide__title {
@@ -855,14 +936,17 @@ body {
 
 .presentation__question {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   margin: 0;
   padding-top: 17px;
+  color: #000000;
 }
 @media (min-width: 768px) {
   .presentation__question {
     padding-top: 58px;
+    font-size: 30px;
+    line-height: 26px;
   }
 }
 @media (min-width: 1200px) {
@@ -873,7 +957,9 @@ body {
 
 .presentation__invitation {
   margin: 0;
-  padding: 37px 27px 38px 27px;
+  padding: 37px 20px 38px 20px;
+  font-size: 18px;
+  line-height: 26px;
 }
 @media (min-width: 768px) {
   .presentation__invitation {
@@ -883,17 +969,38 @@ body {
 }
 @media (min-width: 1200px) {
   .presentation__invitation {
-    padding-left: 177px;
-    padding-right: 178px;
+    padding-left: 62px;
+    padding-right: 64px;
   }
 }
 
 .presentation__player {
   padding: 0 20px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .presentation__player {
     padding: 0;
+  }
+}
+
+.presentation__button {
+  position: absolute;
+  z-index: 1;
+  top: 63px;
+  left: 144px;
+  background-color: transparent;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .presentation__button {
+    top: 223px;
+    left: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .presentation__button {
+    left: 376px;
   }
 }
 
@@ -918,7 +1025,6 @@ body {
 }
 .choice__mark:active {
   background-color: #d5d5d5;
-  color: gray;
 }
 
 .choice__input[type=checkbox]:checked + .choice__mark::before {
@@ -929,6 +1035,10 @@ body {
   height: 16px;
   content: "";
   background-image: url("../img/icon/tick.svg");
+}
+.choice__input[type=checkbox]:checked + .choice__mark:active::before {
+  fill: #333333;
+  opacity: 0.3;
 }
 .choice__input[type=radio] + .choice__mark {
   border-radius: 50%;
@@ -942,6 +1052,10 @@ body {
   background-color: #333333;
   border-radius: 50%;
   content: "";
+}
+.choice__input[type=radio] + .choice__mark:active::before {
+  fill: #333333;
+  opacity: 0.3;
 }
 
 .choice__label {
@@ -999,6 +1113,19 @@ body {
   color: #000000;
   margin-right: 11px;
 }
+.copyright__text:hover {
+  color: #81b3d2;
+}
+.copyright__text:active {
+  color: #b3b3b3;
+}
+
+.copyright__logo:hover {
+  fill: #81b3d2;
+}
+.copyright__logo:active {
+  fill: #b3b3b3;
+}
 
 .nickname {
   padding: 24px 20px 39px 20px;
@@ -1032,6 +1159,8 @@ body {
 @media (min-width: 768px) {
   .nickname__title {
     margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -1081,6 +1210,8 @@ body {
 @media (min-width: 768px) {
   .contact__title {
     margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -1096,6 +1227,10 @@ body {
 }
 .contact__item:last-child {
   margin-bottom: 0;
+}
+
+.contact__line {
+  position: relative;
 }
 
 .grade {
@@ -1146,6 +1281,12 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .grade__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .grade__list {
@@ -1249,6 +1390,8 @@ body {
   .place__title {
     margin-bottom: 28px;
     padding: 0 47px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -1334,9 +1477,11 @@ body {
   padding: 0;
   margin: 0;
 }
-
-.text-field {
-  position: relative;
+@media (min-width: 768px) {
+  .comment__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .text-field__icon {
@@ -1376,6 +1521,7 @@ body {
   }
   .text-field__input--info {
     width: 403px;
+    margin-right: auto;
   }
 }
 .text-field__input--textarea {
