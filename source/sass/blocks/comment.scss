@@ -42,4 +42,9 @@
   text-align: center;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }

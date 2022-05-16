@@ -12,7 +12,7 @@
     padding: 39px 19px 34px 19px;
 
     @media (min-width: $tablet-width) {
-      padding: 40px 32px 44px 32px;
+      padding: 43px 36px 41px 36px;
     }
 
     @media (min-width: $desktop-width) {
@@ -22,6 +22,12 @@
 
   &--decor {
     padding: 54px 19px 40px 19px;
+    font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      padding: 40px 32px 44px 32px;
+    }
 
     &::before {
       content: "";
@@ -52,7 +58,7 @@
     @media (min-width: $tablet-width) {
       box-sizing: border-box;
       width: 256px;
-      padding: 42px 32px 63px 32px;
+      padding: 42px 32px 41px 32px;
       border: none;
     }
 
@@ -72,16 +78,20 @@
 
     p {
       margin-top: 16px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 30px;
+      }
     }
 
     @media (min-width: $tablet-width) {
       width: 256px;
-      padding: 158px 36px 34px 35px;
+      padding: 158px 36px 59px 35px;
     }
 
     @media (min-width: $desktop-width) {
       width: 400px;
-      padding: 158px 44px 55px 43px;
+      padding: 159px 59px 80px 59px;
     }
   }
 
@@ -176,6 +186,16 @@
   line-height: 26px;
   margin: 0;
   position: relative;
+  color: $caption;
+
+  &--white {
+    color: $base;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .advantages__number {

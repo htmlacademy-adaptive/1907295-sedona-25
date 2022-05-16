@@ -50,6 +50,8 @@
   margin-bottom: 12px;
   margin-top: 15px;
   color: $caption;
+  font-size: 14px;
+  line-height: 21px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -138,3 +140,7 @@
     opacity: 1;
   }
 }
+
+// .guide__quantity {
+
+// }

@@ -1,7 +1,3 @@
-.text-field {
-  position: relative;
-}
-
 .text-field__icon {
   position: absolute;
   top: 0;
@@ -38,6 +34,7 @@
 
     &--info {
       width: 403px;
+      margin-right: auto;
     }
   }
 

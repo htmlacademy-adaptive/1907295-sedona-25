@@ -25,6 +25,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -38,4 +40,8 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.contact__line {
+  position: relative;
 }
