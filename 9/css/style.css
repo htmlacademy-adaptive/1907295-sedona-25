@@ -22,11 +22,12 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .container {
   margin: 0 auto;
+  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 320px) {
@@ -701,6 +702,8 @@ body {
 @media (min-width: 768px) {
   .review__necessarily {
     margin: 0;
+    display: inline-block;
+    padding-top: 19px;
   }
 }
 
@@ -740,6 +743,11 @@ body {
   line-height: 26px;
   color: #000000;
   width: 166px;
+}
+@media (min-width: 768px) {
+  .main-footer__website {
+    padding-top: 11px;
+  }
 }
 .main-footer__website:hover {
   color: #81b3d2;
@@ -1158,7 +1166,8 @@ body {
 }
 @media (min-width: 768px) {
   .nickname__title {
-    margin-bottom: 28px;
+    padding-bottom: 28px;
+    margin: 0 auto;
     font-size: 21px;
     line-height: 26px;
   }
@@ -1233,6 +1242,10 @@ body {
   position: relative;
 }
 
+.contact__label {
+  margin-left: 16px;
+}
+
 .grade {
   padding: 24px 20px 34px 20px;
   border-top: 1px solid #e5e5e5;
@@ -1252,18 +1265,15 @@ body {
 
 .grade__line {
   margin-bottom: 20px;
+  position: relative;
 }
 @media (min-width: 768px) {
-  .grade__line {
-    position: relative;
-  }
   .grade__line::before {
     content: "";
     position: absolute;
     top: 50%;
-    height: 1px;
     width: 100%;
-    background-color: #dbdbdb;
+    border-top: 1px solid #dbdbdb;
     z-index: -1;
   }
 }
@@ -1271,6 +1281,7 @@ body {
 .grade__wrapper {
   max-width: 400px;
   margin: 0 auto;
+  display: block;
 }
 
 .grade__title {
