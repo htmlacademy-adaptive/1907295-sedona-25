@@ -23,7 +23,7 @@
       height: 1px;
       width: 100%;
       background-color: $devider;
-      z-index: -1;
+      z-index: 1;
     }
   }
 }
@@ -46,5 +46,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    position: relative;
+    z-index: 2;
   }
 }
