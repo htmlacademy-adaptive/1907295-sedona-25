@@ -32,6 +32,10 @@
   color: $caption;
   width: 166px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+  }
+
   &:hover {
     color: $style;
   }
