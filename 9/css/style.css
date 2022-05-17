@@ -1275,7 +1275,7 @@ body {
     top: 50%;
     width: 100%;
     border-top: 1px solid #dbdbdb;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
@@ -1298,6 +1298,8 @@ body {
   .grade__title {
     font-size: 21px;
     line-height: 26px;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -1374,7 +1376,7 @@ body {
     height: 1px;
     width: 100%;
     background-color: #dbdbdb;
-    z-index: -1;
+    z-index: 1;
   }
 }
 @media (min-width: 1200px) {
@@ -1404,6 +1406,8 @@ body {
     padding: 0 47px;
     font-size: 21px;
     line-height: 26px;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -1470,7 +1474,7 @@ body {
     height: 1px;
     width: 100%;
     background-color: #dbdbdb;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
@@ -1493,6 +1497,8 @@ body {
   .comment__title {
     font-size: 21px;
     line-height: 26px;
+    position: relative;
+    z-index: 2;
   }
 }
 
