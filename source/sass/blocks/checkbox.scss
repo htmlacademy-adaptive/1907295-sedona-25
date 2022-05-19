@@ -13,6 +13,14 @@
   border: 0;
   background-color: $input;
   border-radius: 4px;
+
+  &:hover {
+    background-color: $line;
+  }
+
+  &:active {
+    background-color: $press;
+  }
 }
 
 .choice__input {
@@ -25,6 +33,11 @@
       height: 16px;
       content: "";
       background-image: url("../img/icon/tick.svg");
+    }
+
+    & + .choice__mark:active::before {
+      fill: $text;
+      opacity: 0.3;
     }
   }
 
@@ -42,6 +55,11 @@
       background-color: $text;
       border-radius: 50%;
       content: "";
+    }
+
+    & + .choice__mark:active::before {
+      fill: $text;
+      opacity: 0.3;
     }
   }
 }

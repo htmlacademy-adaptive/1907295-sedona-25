@@ -1,6 +1,25 @@
 .personal {
+  position: relative;
+  padding-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      border-right: 1px solid $devider;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 493px;
+    }
   }
 }

@@ -1,9 +1,11 @@
 .contact {
   padding: 24px 20px 34px 20px;
+  border-top: 1px solid $line;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-left: auto;
+    border: none;
   }
 }
 
@@ -22,7 +24,10 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -36,4 +41,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.contact__line {
+  position: relative;
+}
+
+.contact__label {
+  margin-left: 16px;
 }

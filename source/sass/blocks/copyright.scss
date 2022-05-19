@@ -5,4 +5,22 @@
   text-transform: uppercase;
   color: $caption;
   margin-right: 11px;
+
+  &:hover {
+    color: $style;
+  }
+
+  &:active {
+    color: $signature;
+  }
+}
+
+.copyright__logo {
+  &:hover {
+    fill: $style;
+  }
+
+  &:active {
+    fill: $signature;
+  }
 }

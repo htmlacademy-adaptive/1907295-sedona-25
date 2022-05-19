@@ -1,3 +1,15 @@
+.text-field__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: $contact;
+
+  &--email {
+    padding: 23px 21px;
+  }
+}
+
 .text-field__input {
   font-weight: 700;
   font-size: 18px;
@@ -10,6 +22,8 @@
   background-color: $input;
   padding: 16px;
   resize: none;
+  margin: 0 auto;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 280px;
@@ -17,6 +31,11 @@
 
   @media (min-width: $desktop-width) {
     width: 430px;
+
+    &--info {
+      width: 403px;
+      margin-right: auto;
+    }
   }
 
   &--textarea {
@@ -32,9 +51,19 @@
     }
   }
 
+  &:hover {
+    background-color: $line;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $base;
+    outline: 4px solid $line;
+  }
+
   &::placeholder {
-    color: $caption;
-    background-color: $input;
+    color: lighten($caption, 70%);
+    background-color: transparent;
   }
 }
 

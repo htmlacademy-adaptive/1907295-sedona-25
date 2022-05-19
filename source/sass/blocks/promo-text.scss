@@ -3,10 +3,26 @@
 
   @media (min-width: $tablet-width) {
     padding: 47px 124px 56px 124px;
+
+    &--wide {
+      padding: 62px 155px 63px 155px;
+    }
+
+    &--form {
+      padding: 64px 166px 102px 165px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 59px 358px 45px 358px;
+
+    &--wide {
+      padding: 100px 371px 65px 371px;
+    }
+
+    &--form {
+      padding: 115px 383px 67px 383px;
+    }
   }
 }
 
@@ -18,6 +34,31 @@
   text-align: center;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &--catalog {
+    font-size: 21px;
+    line-height: 26px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+    }
+  }
+
+  &--form {
+    font-size: 21px;
+    line-height: 26px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+    }
+  }
 }
 
 .promo-text__intro {
