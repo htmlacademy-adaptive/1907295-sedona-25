@@ -15,7 +15,7 @@
 
 .presentation__question {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   margin: 0;
   padding-top: 17px;
@@ -34,9 +34,9 @@
 
 .presentation__invitation {
   margin: 0;
-  padding: 37px 20px 38px 20px;
-  font-size: 18px;
-  line-height: 26px;
+  padding: 27px 25px 38px 26px;
+  font-size: 14px;
+  line-height: 21px;
 
   @media (min-width: $tablet-width) {
     padding-left: 101px;

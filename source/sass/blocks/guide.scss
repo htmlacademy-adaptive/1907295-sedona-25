@@ -47,7 +47,7 @@
 }
 
 .guide__title {
-  margin-bottom: 12px;
+  margin: 0;
   margin-top: 15px;
   color: $caption;
   font-size: 14px;
@@ -63,8 +63,8 @@
 }
 
 .guide__author {
+  margin: 0;
   margin-bottom: 11px;
-  margin-top: 12px;
   text-transform: initial;
 
   @media (min-width: $tablet-width) {
@@ -129,7 +129,9 @@
 }
 
 .guide__icon {
-  margin-right: 14px;
+  margin-right: 10px;
+  color: currentColor;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     margin-right: 9px;
@@ -140,7 +142,3 @@
     opacity: 1;
   }
 }
-
-// .guide__quantity {
-
-// }

@@ -11,6 +11,7 @@
 }
 
 .text-field__input {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -31,10 +32,10 @@
 
   @media (min-width: $desktop-width) {
     width: 430px;
+    margin: 0 auto;
 
     &--info {
       width: 403px;
-      margin-right: auto;
     }
   }
 

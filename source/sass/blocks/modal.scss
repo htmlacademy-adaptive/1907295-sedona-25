@@ -1,0 +1,55 @@
+.modal {
+  position: relative;
+  margin: auto;
+  margin-top: 116px;
+  padding: 45px 42px 35px 41px;
+  background-color: $base;
+
+  &--negative {
+    display: none;
+  }
+
+  &--positive {
+    padding: 0;
+    display: none;
+  }
+}
+
+.modal__content {
+  text-align: center;
+  margin-bottom: 28px;
+
+  &--record {
+    padding: 39px 39px 51px 37px;
+    margin: 0;
+  }
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.modal__message {
+  margin: 0;
+}
+
+.modal__button {
+  font-size: 18px;
+  line-height: 26px;
+  display: block;
+  margin: auto;
+  padding: 18px 0 14px;
+  width: 180px;
+
+  &--close {
+    width: 280px;
+  }
+}
+
+.modal__layer {
+  padding: 20px;
+  background-color: $input;
+}

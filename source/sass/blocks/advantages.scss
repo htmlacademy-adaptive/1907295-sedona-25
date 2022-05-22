@@ -21,7 +21,7 @@
   }
 
   &--decor {
-    padding: 54px 19px 40px 19px;
+    padding: 54px 25px 40px 19px;
     font-weight: 700;
 
     @media (min-width: $tablet-width) {
@@ -48,7 +48,7 @@
   &--grey {
     color: $text;
     background-color: $box;
-    padding: 24px 19px 24px 19px;
+    padding: 26px 19px 24px 19px;
     border-bottom: 1px solid $delimiter;
 
     &:last-child {
@@ -67,11 +67,19 @@
       padding: 43px 43px 62px 42px;
     }
   }
+
+  &--second {
+    padding: 26px 42px 24px 40px;
+  }
+
+  &--third {
+    padding: 26px 32px 24px 32px;
+  }
 }
 
 .advantages__item {
   &--sub {
-    padding-top: 31px;
+    padding-top: 30px;
     padding-left: 65px;
     position: relative;
     border: none;
@@ -80,12 +88,13 @@
       margin-top: 16px;
 
       @media (min-width: $tablet-width) {
-        margin-top: 30px;
+        margin-top: 25px;
       }
     }
 
     @media (min-width: $tablet-width) {
       width: 256px;
+      box-sizing: border-box;
       padding: 158px 36px 59px 35px;
     }
 
@@ -96,6 +105,8 @@
   }
 
   &--house {
+    padding-right: 30px;
+
     &::before {
       content: "";
       position: absolute;
@@ -122,6 +133,8 @@
   }
 
   &--food {
+    padding-left: 70px;
+
     &::before {
       content: "";
       position: absolute;
@@ -148,6 +161,7 @@
   }
 
   &--souvenirs {
+    padding-left: 62px;
     padding-bottom: 52px;
 
     &::before {
@@ -158,8 +172,8 @@
       background-size: 100% auto;
       width: 32px;
       height: 38px;
-      top: 25px;
-      left: 18px;
+      top: 22px;
+      left: 22px;
 
       @media (min-width: $tablet-width) {
         width: 64px;
@@ -201,6 +215,11 @@
 .advantages__number {
   margin-top: 11px;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description {
