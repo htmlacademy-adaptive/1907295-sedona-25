@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/32.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="img/152.png">
   </head>
   <body class="page__body">
     <div class="container">
@@ -40,7 +42,11 @@
         <section class="promo-catalog">
           <div class="promo-catalog__wrapper">
             <h1 class="visually-hidden">Sedona.</h1>
-            <img class="promo-catalog__style" src="img/sedona.svg" width="229" height="39" alt="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
+              <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="78">
+              <img class="promo-catalog__style" src="img/sedona.svg" width="229" height="39" alt="Логотип Седона">
+            </picture>
           </div>
         </section>
         <section class="promo-text promo-text--form">
@@ -85,7 +91,9 @@
                       <div class="contact__line">
                         <label class="text-field">
                           <input class="text-field__input text-field__input--info" type="tel" name="contact" placeholder="Введите телефон" required>
-                          <svg class="text-field__icon" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/></svg>
+                          <svg class="text-field__icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/icon/sprite.svg#phone"></use>
+                          </svg>
                         </label>
                       </div>
                     </li>
@@ -94,7 +102,9 @@
                       <div class="contact__line">
                         <label class="text-field">
                           <input class="text-field__input text-field__input--info" type="email" name="contact" placeholder="Введите e-mail" required>
-                          <svg class="text-field__icon text-field__icon--email" width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/></svg>
+                          <svg class="text-field__icon text-field__icon--email" width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/icon/sprite.svg#mail"></use>
+                          </svg>
                         </label>
                       </div>
                     </li>
@@ -187,39 +197,63 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="main-footer__wrapper">
+        <div class="main-footer__wrapper main-footer__wrapper--form">
           <a class="main-footer__website">#VISITSEDONA</a>
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Мы в вконтакте</span>
-                  <svg class="social__icon" width="24" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" fill="#fff"/></svg>
+                  <svg class="social__icon" width="24" height="14"  xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icon/sprite.svg#icon-vkontakte"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--telegram" href="https://www.t.me/user/htmlacademyru">
                   <span class="visually-hidden">Мы в телеграме</span>
-                  <svg class="social__icon" width="22" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" fill="#fff"/></svg>
+                  <svg class="social__icon" width="22" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icon/sprite.svg#icon-telegram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">
                   <span class="visually-hidden">Мы в ютюбе</span>
-                  <svg class="social__icon" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" fill="#fff"/></svg>
+                  <svg class="social__icon" width="20" height="14" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icon/sprite.svg#icon-youtube"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
           </div>
           <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="visually-hidden copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-              <path class="copyright__logo" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-            </svg>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+              <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35">
+                <use xlink:href="img/icon/sprite.svg#htmlacademy"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal--negative">
+          <section class="modal__content">
+            <h2 class="modal__title">Что-то пошло не так!</h2>
+            <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+          </section>
+          <button class="button modal__button" type="button">Ок</button>
+        </div>
+        <div class="modal modal--positive">
+          <section class="modal__content modal__content--record">
+            <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+            <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          </section>
+          <div class="modal__layer">
+            <button class="button modal__button modal__button--close" type="button">Закрыть окно</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>

@@ -1,7 +1,15 @@
 .main-footer__wrapper {
   text-align: center;
-  margin-top: 39px;
+  margin-top: 34px;
   margin-bottom: 23px;
+
+  &--form {
+    margin-top: 52px;
+  }
+
+  &--catalog {
+    margin-top: 28px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;

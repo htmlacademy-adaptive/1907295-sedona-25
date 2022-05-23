@@ -1,5 +1,13 @@
 .promo-text {
-  padding: 32px 19px 32px 19px;
+  padding: 33px 28px 34px 25px;
+
+  &--form {
+    padding: 37px 19px 27px 19px;
+  }
+
+  &--wide {
+    padding: 33px 20px 41px 20px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 47px 124px 56px 124px;
@@ -21,7 +29,7 @@
     }
 
     &--form {
-      padding: 115px 383px 67px 383px;
+      padding: 113px 380px 70px 380px;
     }
   }
 }
@@ -38,11 +46,11 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 30px;
   }
 
   &--catalog {
-    font-size: 21px;
-    line-height: 26px;
+    margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
@@ -51,12 +59,17 @@
   }
 
   &--form {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 26px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
       line-height: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 32px;
     }
   }
 }
