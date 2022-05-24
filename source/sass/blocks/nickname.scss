@@ -4,7 +4,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-right: auto;
     border: none;
   }
 }
@@ -33,6 +32,15 @@
 
 .nickname__list {
   @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
 }
 
 .nickname__item {

@@ -5,5 +5,10 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 95px 0 97px;
   }
 }
