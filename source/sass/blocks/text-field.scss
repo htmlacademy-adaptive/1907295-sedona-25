@@ -44,11 +44,11 @@
 
     @media (min-width: $tablet-width) {
       width: 100%;
+      min-height: 160px;
     }
 
     @media (min-width: $desktop-width) {
       width: 768px;
-      min-height: 160px;
     }
   }
 

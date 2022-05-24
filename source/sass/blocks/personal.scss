@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     &::after {
       content: "";

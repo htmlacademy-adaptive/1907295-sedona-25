@@ -13,19 +13,19 @@
     padding: 47px 124px 56px 124px;
 
     &--wide {
-      padding: 62px 155px 63px 155px;
+      padding: 60px 167px 87px 167px;
     }
 
     &--form {
-      padding: 64px 166px 102px 165px;
+      padding: 64px 166px 106px 165px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 59px 358px 45px 358px;
+    padding: 59px 350px 45px 350px;
 
     &--wide {
-      padding: 100px 371px 65px 371px;
+      padding: 100px 380px 87px 380px;
     }
 
     &--form {
@@ -55,6 +55,11 @@
     @media (min-width: $tablet-width) {
       font-size: 30px;
       line-height: 26px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 31px;
     }
   }
 
@@ -66,6 +71,7 @@
     @media (min-width: $tablet-width) {
       font-size: 30px;
       line-height: 26px;
+      margin-bottom: 23px;
     }
 
     @media (min-width: $desktop-width) {

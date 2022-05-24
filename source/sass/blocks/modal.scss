@@ -1,17 +1,39 @@
 .modal {
   position: relative;
   margin: auto;
-  margin-top: 116px;
   padding: 45px 42px 35px 41px;
   background-color: $base;
 
   &--negative {
     display: none;
+    margin-top: 116px;
+
+    @media (min-width: $tablet-width) {
+      width: 400px;
+      padding: 0;
+      padding-bottom: 49px;
+      margin-top: 283px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 244px;
+    }
   }
 
   &--positive {
     padding: 0;
+    margin-top: 402px;
     display: none;
+
+    @media (min-width: $tablet-width) {
+      width: 640px;
+      padding: 0;
+      margin-top: 162px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 145px;
+    }
   }
 }
 
@@ -19,9 +41,18 @@
   text-align: center;
   margin-bottom: 28px;
 
+  @media (min-width: $tablet-width) {
+    padding: 50px 47px 47px 46px;
+    margin: 0;
+  }
+
   &--record {
     padding: 39px 39px 51px 37px;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 45px 110px 54px;
+    }
   }
 }
 
@@ -30,6 +61,13 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+  }
 }
 
 .modal__message {
@@ -44,12 +82,24 @@
   padding: 18px 0 14px;
   width: 180px;
 
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
+
   &--close {
     width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 458px;
+    }
   }
 }
 
 .modal__layer {
   padding: 20px;
   background-color: $input;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px;
+  }
 }
