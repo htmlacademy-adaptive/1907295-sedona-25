@@ -6,12 +6,16 @@
   position: relative;
   background-color: $input;
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/back-desktop.jpg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
   }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-desktop@2x.jpg"), url("../img/back-mobile@2x.jpg");
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 
   &::after {

@@ -20,6 +20,10 @@
   vertical-align: middle;
   margin-left: 10px;
 
+  @media (min-width: $desktop-width) {
+    margin-left: 9px;
+  }
+
   &:hover {
     fill: $style;
   }
