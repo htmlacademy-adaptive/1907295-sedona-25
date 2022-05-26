@@ -16,7 +16,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 47px 52px 57px 53px;
+      padding: 51px 85px 54px 86px;
     }
   }
 
@@ -89,7 +89,7 @@
     padding: 26px 32px 24px 32px;
 
     @media (min-width: $tablet-width) {
-      padding: 40px 50px 42px;
+      padding: 43px 50px 42px;
     }
   }
 }
@@ -123,6 +123,18 @@
   &--food {
     padding-left: 70px;
 
+    @media (min-width: $mobile-width) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -147,6 +159,18 @@
   &--souvenirs {
     padding-left: 62px;
     padding-bottom: 52px;
+
+    @media (min-width: $mobile-width) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      br {
+        display: block;
+      }
+    }
 
     &::before {
       content: "";
@@ -179,21 +203,23 @@
 
       @media (min-width: $tablet-width) {
         margin-top: 25px;
+        width: 193px;
       }
 
       @media (min-width: $desktop-width) {
         margin-top: 22px;
+        width: auto;
       }
     }
 
     @media (min-width: $tablet-width) {
       width: 256px;
-      padding: 158px 36px 59px 35px;
+      padding: 158px 31px 59px 31px;
     }
 
     @media (min-width: $desktop-width) {
       width: 400px;
-      padding: 159px 59px 80px 59px;
+      padding: 157px 59px 82px 59px;
     }
   }
 
@@ -216,11 +242,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 70px;
+    width: 150px;
+    margin: 0 auto;
   }
 
   &--white {
     color: $base;
+
+    @media (min-width: $tablet-width) {
+      width: 150px;
+      margin: 0 auto;
+    }
   }
 }
 
