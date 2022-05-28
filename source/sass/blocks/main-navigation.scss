@@ -31,6 +31,25 @@
       position: absolute;
       z-index: 1;
       width: 100%;
+
+      @media (min-width: $tablet-width) {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &--nojs {
+    .main-navigation__wrapper {
+      position: static;
+      display: block;
+
+      @media (min-width: $tablet-width) {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }

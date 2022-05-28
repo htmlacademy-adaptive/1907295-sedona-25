@@ -32,7 +32,7 @@
 }
 
 .review__necessarily {
-  font-family: "PT Sans", sans-serif;
+  @include fonts;
   margin: 0;
   margin-top: 3px;
   text-align: right;
