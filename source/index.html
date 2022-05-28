@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/ico" sizes="32x32" href="img/32.ico">
     <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="img/152.png">
+    <link link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="container">
@@ -14,7 +15,7 @@
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
-        <nav class="main-navigation main-navigation--closed">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -43,7 +44,7 @@
           <div class="promo__wrapper">
             <h1 class="visually-hidden">Sedona.</h1>
             <picture>
-              <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350">
+              <source media="(min-width: 768px)" srcset="img/text-index.svg">
               <img class="promo__style" src="img/text-index.svg" width="282" height="214" alt="Логотип Седона">
             </picture>
           </div>
@@ -65,9 +66,9 @@
                   </div>
                   <div class="advantages__photo">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
-                      <img class="country-card" src="img/city.jpg" srcset="img/city@2x.jpg 2x" width="320" height="260" alt="Городок Седона.">
+                      <source media="(min-width: 1200px)" srcset="img/city-desktop.webp 1x, img/city-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/city-tablet.webp 1x, img/city-tablet@2x.webp 2x">
+                      <img class="country-card" src="img/city.webp" srcset="img/city@2x.webp 2x" width="320" height="260" alt="Городок Седона.">
                     </picture>
                   </div>
                 </div>
@@ -89,15 +90,15 @@
               <li class="advantages__item">
                 <div class="advantages__line">
                   <div class="advantages__box advantages__box--blue">
-                    <h3 class="advantages__title advantages__title--white">Там есть мост дьявола</h3>
+                    <h3 class="advantages__title advantages__title--white">Там есть &nbsp; мост дьявола</h3>
                     <p class="advantages__number">— №2 —</p>
                     <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
                   <div class="advantages__photo advantages__photo--beginning">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
-                      <img class="country-card" src="img/bridge.jpg" srcset="img/bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+                      <source media="(min-width: 1200px)" srcset="img/bridge-desktop.webp 1x, img/bridge-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/bridge-tablet.webp 1x, img/bridge-tablet@2x.webp 2x">
+                      <img class="country-card" src="img/bridge.webp" srcset="img/bridge@2x.webp 2x" width="320" height="260" alt="Мост дьявола.">
                     </picture>
                   </div>
                 </div>
@@ -131,11 +132,7 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="land" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="Навигация по карте.">
-          </picture>
+          <iframe class="land" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1653708019909!5m2!1sru!2sru" width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Навигация по карте."></iframe>
         </section>
       </main>
       <footer class="main-footer">

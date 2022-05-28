@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/ico" sizes="32x32" href="img/32.ico">
     <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="img/152.png">
+    <link link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="container">
@@ -14,7 +15,7 @@
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
-        <nav class="main-navigation main-navigation--closed">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -59,9 +60,9 @@
             <li class="guide__card guide__card--sub">
               <div class="guide__photo">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img class="popular-card popular-card--prime" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы.">
+                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                  <img class="popular-card popular-card--prime" src="img/photo-1-mobile.webp" srcset="img/photo-1-mobile@2x.webp 2x" width="280" height="280" alt="Неродные просторы.">
                 </picture>
                 <section class="guide__item">
                   <div class="guide__caption">
@@ -82,9 +83,9 @@
             <li class="guide__card">
               <div class="guide__photo">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img class="popular-card" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность.">
+                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                  <img class="popular-card" src="img/photo-2-mobile.webp" srcset="img/photo-2-mobile@2x.webp 2x" width="280" height="280" alt="Местная растительность.">
                 </picture>
                 <section class="guide__item">
                   <div class="guide__caption">
@@ -105,9 +106,9 @@
             <li class="guide__card">
               <div class="guide__photo">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img class="popular-card" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                  <img class="popular-card" src="img/photo-3-mobile.webp" srcset="img/photo-3-mobile@2x.webp 2x" width="280" height="280" alt="Дорога на север.">
                 </picture>
                 <section class="guide__item guide__item--active">
                   <div class="guide__caption">
@@ -128,9 +129,9 @@
             <li class="guide__card">
               <div class="guide__photo">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                  <img class="popular-card" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                  <img class="popular-card" src="img/photo-4-mobile.webp" srcset="img/photo-4-mobile@2x.webp 2x" width="280" height="280" alt="Мост дьявола.">
                 </picture>
                 <section class="guide__item">
                   <div class="guide__caption">
@@ -155,9 +156,9 @@
           <p class="presentation__invitation">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="presentation__player">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img class="video" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Неродные просторы.">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <img class="video" src="img/video-mobile.webp" srcset="img/video-mobile@2x.webp 2x" width="280" height="177" alt="Неродные просторы.">
             </picture>
             <button class="button presentation__button" type="button" aria-label="Воспроизвести">
               <svg width="48" height="54" xmlns="http://www.w3.org/2000/svg">

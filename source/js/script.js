@@ -3,6 +3,7 @@ let navigationMain = document.querySelector('.main-navigation');
 let navigationToggle = document.querySelector('.main-navigation__toggle');
 
 headerMain.classList.remove('main-header--nojs');
+navigationMain.classList.remove('main-navigation--nojs');
 
 navigationToggle.addEventListener('click', function () {
   if (navigationMain.classList.contains('main-navigation--closed')) {

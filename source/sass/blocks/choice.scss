@@ -1,3 +1,79 @@
+// .choice {
+//   position: relative;
+//   display: block;
+// }
+
+// .choice__mark {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   left: 0;
+//   width: 46px;
+//   height: 46px;
+//   border: 0;
+//   background-color: $input;
+//   border-radius: 4px;
+
+//   &:hover {
+//     background-color: $line;
+//   }
+
+//   &:active {
+//     background-color: $press;
+//   }
+// }
+
+// .choice__input {
+//   &[type="checkbox"]:checked {
+//     & + .choice__mark::before {
+//       position: absolute;
+//       top: 15px;
+//       left: 12px;
+//       width: 22px;
+//       height: 16px;
+//       content: "";
+//       background-image: url("../img/tick.svg");
+//     }
+
+//     & + .choice__mark:active::before {
+//       fill: $text;
+//       opacity: 0.3;
+//     }
+//   }
+
+//   &[type="radio"] {
+//     & + .choice__mark {
+//       border-radius: 50%;
+//     }
+
+//     &:checked + .choice__mark::before {
+//       position: absolute;
+//       top: 15px;
+//       left: 15px;
+//       width: 16px;
+//       height: 16px;
+//       background-color: $text;
+//       border-radius: 50%;
+//       content: "";
+//     }
+
+//     & + .choice__mark:active::before {
+//       fill: $text;
+//       opacity: 0.3;
+//     }
+//   }
+// }
+
+// .choice__label {
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 26px;
+//   color: $caption;
+//   background-color: $base;
+//   padding-left: 62px;
+//   text-transform: initial;
+// }
+
 .choice {
   position: relative;
   display: block;
@@ -24,6 +100,19 @@
 }
 
 .choice__input {
+  &[type="checkbox"]:focus {
+    & + .choice__mark {
+      outline: 4px solid $line;
+    }
+  }
+
+  &[type="checkbox"]:disabled {
+    & + .choice__mark {
+      background-color: $volume-top;
+      opacity: 0.3;
+    }
+  }
+
   &[type="checkbox"]:checked {
     & + .choice__mark::before {
       position: absolute;
@@ -37,6 +126,19 @@
 
     & + .choice__mark:active::before {
       fill: $text;
+      opacity: 0.3;
+    }
+  }
+
+  &[type="radio"]:focus {
+    & + .choice__mark {
+      outline: 4px solid $line;
+    }
+  }
+
+  &[type="radio"]:disabled {
+    & + .choice__mark {
+      background-color: $volume-top;
       opacity: 0.3;
     }
   }

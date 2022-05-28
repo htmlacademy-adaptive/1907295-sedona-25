@@ -35,10 +35,14 @@
   display: block;
   padding: 90px 19px 85px;
   margin: 0 auto;
+  width: 282px;
+  height: 214px;
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-bottom: 91px;
+    width: 461px;
+    height: 350px;
   }
 
   @media (min-width: $desktop-width) {

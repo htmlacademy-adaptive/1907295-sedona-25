@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/ico" sizes="32x32" href="img/32.ico">
     <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="img/152.png">
+    <link link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="container">
@@ -14,7 +15,7 @@
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
-        <nav class="main-navigation main-navigation--closed">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -128,14 +129,14 @@
                 </li>
                 <li class="grade__item">
                   <label class="choice grade__choice">
-                    <input class="visually-hidden choice__input" type="radio" name="grade" value="negative">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="negative" disabled>
                     <span class="choice__mark"></span>
                     <span class="choice__label">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="grade__item">
                   <label class="choice grade__choice">
-                    <input class="visually-hidden choice__input" type="radio" name="grade" value="uncertain">
+                    <input class="visually-hidden choice__input" type="radio" name="grade" value="uncertain" disabled>
                     <span class="choice__mark"></span>
                     <span class="choice__label">Затрудняюсь ответить</span>
                   </label>
